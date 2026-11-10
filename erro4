@@ -1,0 +1,26 @@
+2026-11-10 15:49:24.128 | 2026-11-10 15:49:24 | INFO    | ipop.worker | Worker worker-1 no ar (ambiente padrão hml).
+2026-11-10 15:49:37.093 | 2026-11-10 15:49:37 | INFO    | ipop.worker | Iniciando cadastro 20261110-121954-cafccc (ModeloRegras-SubseOferta 2.xlsx)
+2026-11-10 15:49:37.307 | 2026-11-10 15:49:37 | INFO    | ipop.robo | [rede] IPOP (hml) www.hdi.com.br:443: Conectou (10.7.0.6).
+2026-11-10 15:49:37.307 | 2026-11-10 15:49:37 | INFO    | ipop.robo | [rede] SQL Server 10.155.245.38:1433: Conectou (10.155.245.38).
+2026-11-10 15:49:37.307 | 2026-11-10 15:49:37 | INFO    | ipop.robo | [rede] Driver ODBC ODBC Driver 18 for SQL Server: Instalado.
+2026-11-10 15:49:37.307 | 2026-11-10 15:49:37 | INFO    | ipop.robo | [rede] Login SQL RosieRep como HDIS_RRIPH: Consulta de teste OK.
+2026-11-10 15:49:37.535 | 2026-11-10 15:49:37 | INFO    | ipop.services.leitor_pedido | Abas lidas: ['Módulo Subscrição', 'Módulo Oferta'] | ignoradas: ['Domínios RNS Segurado', 'Domínios RNS Veículo', 'RegrasModelo', 'Tabela de variáveis']
+2026-11-10 15:49:37.535 | 2026-11-10 15:49:37 | INFO    | ipop.services.construtor_regras | 2 regra(s) lidas da planilha.
+2026-11-10 15:49:37.731 | 2026-11-10 15:49:37 | WARNING | ipop.services.construtor_regras | [Módulo Subscrição linha 2] TestesSubs1: Variáveis: CPF / CNPJ (agrupamento) (193) · 398873 não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 15:49:37.731 | 2026-11-10 15:49:37 | WARNING | ipop.services.construtor_regras | [Módulo Oferta linha 2] R_ITURAN_SET26 _C_Oferta_5%: Variáveis: CPF / CNPJ (agrupamento) (193) · R_ITURAN_SET26 _C_Oferta_5% não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 15:49:37.731 | 2026-11-10 15:49:37 | INFO    | ipop.services.construtor_regras | 2 regra(s) prontas para cadastro.
+2026-11-10 15:49:41.150 | 2026-11-10 15:49:41 | INFO    | ipop.robo | === Regra 1/2: TestesSubs1
+2026-11-10 15:49:49.358 | 2026-11-10 15:49:49 | INFO    | ipop.services.cadastro | Modelo 119979 (Regra Modelo - Renovação Ituran Não Compreensiva) copiado.
+2026-11-10 15:49:49.790 | 2026-11-10 15:49:49 | ERROR   | ipop.robo | Falhou a regra 1 (TestesSubs1)
+2026-11-10 15:49:49.790 | Traceback (most recent call last):
+2026-11-10 15:49:49.790 |   File "/app/ipop/robo.py", line 207, in _cadastrar
+2026-11-10 15:49:49.790 |     resultado = servico.cadastrar(regra)
+2026-11-10 15:49:49.790 |   File "/app/ipop/services/cadastro.py", line 79, in cadastrar
+2026-11-10 15:49:49.790 |     self._copiar_modelo(regra)
+2026-11-10 15:49:49.790 |     ~~~~~~~~~~~~~~~~~~~^^^^^^^
+2026-11-10 15:49:49.790 |   File "/app/ipop/services/cadastro.py", line 55, in _copiar_modelo
+2026-11-10 15:49:49.790 |     raise RuntimeError(
+2026-11-10 15:49:49.790 |     ...<3 lines>...
+2026-11-10 15:49:49.790 |     )
+2026-11-10 15:49:49.790 | RuntimeError: Depois de copiar o modelo 119979, esperava 1 'Cópia de Regra Modelo - Renovação Ituran Não Compreensiva' nova na lista e achei 0 (nenhuma). Parei sem editar nada. Confira a lista no IPOP.
+2026-11-10 15:49:50.549 | 2026-11-10 15:49:50 | INFO    | ipop.worker | Terminou 20261110-121954-cafccc com código 5
