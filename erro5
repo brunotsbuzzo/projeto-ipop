@@ -1,0 +1,1067 @@
+2026-11-10 16:21:17.213 | 2026-11-10 16:21:17 | INFO    | ipop.worker | Worker worker-1 no ar (ambiente padrão hml).
+2026-11-10 16:21:23.639 | 2026-11-10 16:21:23 | INFO    | ipop.worker | Iniciando cadastro 20261110-121954-cafccc (ModeloRegras-SubseOferta 2.xlsx)
+2026-11-10 16:21:23.881 | 2026-11-10 16:21:23 | INFO    | ipop.robo | [rede] IPOP (hml) www.hdi.com.br:443: Conectou (10.7.0.6).
+2026-11-10 16:21:23.881 | 2026-11-10 16:21:23 | INFO    | ipop.robo | [rede] SQL Server 10.155.245.38:1433: Conectou (10.155.245.38).
+2026-11-10 16:21:23.881 | 2026-11-10 16:21:23 | INFO    | ipop.robo | [rede] Driver ODBC ODBC Driver 18 for SQL Server: Instalado.
+2026-11-10 16:21:23.882 | 2026-11-10 16:21:23 | INFO    | ipop.robo | [rede] Login SQL RosieRep como HDIS_RRIPH: Consulta de teste OK.
+2026-11-10 16:21:24.126 | 2026-11-10 16:21:24 | INFO    | ipop.services.leitor_pedido | Abas lidas: ['Módulo Subscrição', 'Módulo Oferta'] | ignoradas: ['Domínios RNS Segurado', 'Domínios RNS Veículo', 'RegrasModelo', 'Tabela de variáveis']
+2026-11-10 16:21:24.127 | 2026-11-10 16:21:24 | INFO    | ipop.services.construtor_regras | 2 regra(s) lidas da planilha.
+2026-11-10 16:21:24.338 | 2026-11-10 16:21:24 | WARNING | ipop.services.construtor_regras | [Módulo Subscrição linha 2] TestesSubs1: Variáveis: CPF / CNPJ (agrupamento) (193) · 398873 não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 16:21:24.338 | 2026-11-10 16:21:24 | WARNING | ipop.services.construtor_regras | [Módulo Oferta linha 2] R_ITURAN_SET26 _C_Oferta_5%: Variáveis: CPF / CNPJ (agrupamento) (193) · R_ITURAN_SET26 _C_Oferta_5% não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 16:21:24.338 | 2026-11-10 16:21:24 | INFO    | ipop.services.construtor_regras | 2 regra(s) prontas para cadastro.
+2026-11-10 16:21:29.132 | 2026-11-10 16:21:29 | INFO    | ipop.robo | === Regra 1/2: TestesSubs1
+2026-11-10 16:21:36.641 | 2026-11-10 16:21:36 | INFO    | ipop.services.cadastro | Cópias desse modelo já existentes: ['132299', '132300']
+2026-11-10 16:21:37.739 | 2026-11-10 16:21:37 | INFO    | ipop.services.cadastro | Modelo 119979 (Regra Modelo - Renovação Ituran Não Compreensiva) copiado.
+2026-11-10 16:21:38.391 | 2026-11-10 16:21:38 | INFO    | ipop.services.cadastro | Cópia nova ainda não apareceu na lista (tentativa 1 de 6).
+2026-11-10 16:21:43.893 | 2026-11-10 16:21:43 | INFO    | ipop.services.cadastro | Cópia nova: ID 132302.
+2026-11-10 16:21:46.033 | 2026-11-10 16:21:46 | INFO    | ipop.pages.formulario_regra | Selecionar grupo executado em 0.55s
+2026-11-10 16:21:46.571 | 2026-11-10 16:21:46 | INFO    | ipop.pages.formulario_regra | Selecionar variável executado em 0.54s
+2026-11-10 16:21:46.787 | 2026-11-10 16:21:46 | INFO    | ipop.pages.formulario_regra | Selecionar tipo executado em 0.21s
+2026-11-10 16:21:47.300 | 2026-11-10 16:21:47 | INFO    | ipop.pages.formulario_regra | Selecionar domínio 10 executado em 0.42s
+2026-11-10 16:21:47.422 | 2026-11-10 16:21:47 | INFO    | ipop.pages.formulario_regra | Aplicar ação executado em 0.12s
+2026-11-10 16:21:47.937 | 2026-11-10 16:21:47 | INFO    | ipop.pages.formulario_regra | Selecionar grupo executado em 0.37s
+2026-11-10 16:21:47.945 | 2026-11-10 16:21:47 | INFO    | ipop.pages.formulario_regra | [GRID] Rota instalada para variável 193
+2026-11-10 16:21:48.174 | (node:26) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+2026-11-10 16:21:48.174 | (Use `node --trace-warnings ...` to show where the warning was created)
+2026-11-10 16:21:48.322 | 2026-11-10 16:21:48 | INFO    | ipop.pages.formulario_regra | Selecionar variável executado em 0.38s
+2026-11-10 16:21:48.568 | 2026-11-10 16:21:48 | INFO    | ipop.pages.formulario_regra | Selecionar tipo executado em 0.25s
+2026-11-10 16:21:51.859 | 2026-11-10 16:21:51 | INFO    | ipop.pages.formulario_regra | [GRID] route.fetch 3.74s
+2026-11-10 16:21:54.834 | 2026-11-10 16:21:54 | INFO    | ipop.pages.formulario_regra | [GRID] route.fetch 6.33s
+2026-11-10 16:21:56.491 | 2026-11-10 16:21:56 | INFO    | ipop.pages.formulario_regra | [GRID] variável=193 | recebidos=28394 | enviados=1
+2026-11-10 16:21:56.500 | 2026-11-10 16:21:56 | INFO    | ipop.pages.formulario_regra | Filtro Grid executado em 7.94s
+2026-11-10 16:21:56.504 | 2026-11-10 16:21:56 | INFO    | ipop.pages.formulario_regra | [GRID] variável=193 | recebidos=28394 | enviados=1
+2026-11-10 16:22:26.611 | 2026-11-10 16:22:26 | INFO    | ipop.pages.formulario_regra | Selecionar domínio 398873 executado em 30.03s
+2026-11-10 16:22:26.615 | 2026-11-10 16:22:26 | INFO    | ipop.pages.formulario_regra | [GRID] Rota removida
+2026-11-10 16:22:26.839 | 2026-11-10 16:22:26 | ERROR   | ipop.robo | Falhou a regra 1 (TestesSubs1)
+2026-11-10 16:22:26.839 | Traceback (most recent call last):
+2026-11-10 16:22:26.839 |   File "/app/ipop/robo.py", line 238, in _cadastrar
+2026-11-10 16:22:26.839 |     resultado = servico.cadastrar(regra)
+2026-11-10 16:22:26.839 |   File "/app/ipop/services/cadastro.py", line 128, in cadastrar
+2026-11-10 16:22:26.839 |     self.formulario.preencher_arvore_de_decisao(acao)
+2026-11-10 16:22:26.839 |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+2026-11-10 16:22:26.839 |   File "/app/ipop/pages/formulario_regra.py", line 486, in preencher_arvore_de_decisao
+2026-11-10 16:22:26.839 |     self._preencher_variavel_categorica(
+2026-11-10 16:22:26.839 |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+2026-11-10 16:22:26.839 |         acao=acao,
+2026-11-10 16:22:26.839 |         ^^^^^^^^^^
+2026-11-10 16:22:26.839 |         rota_instalada=rota_instalada,
+2026-11-10 16:22:26.839 |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |     )
+2026-11-10 16:22:26.839 |     ^
+2026-11-10 16:22:26.839 |   File "/app/ipop/pages/formulario_regra.py", line 591, in _preencher_variavel_categorica
+2026-11-10 16:22:26.839 |     linha = self._localizar_linha_dominio(
+2026-11-10 16:22:26.839 |         texto=texto,
+2026-11-10 16:22:26.839 |         id_dominio=id_dominio,
+2026-11-10 16:22:26.839 |         textos_aceitos=[descricoes[id_dominio]] if id_dominio in descricoes else None,
+2026-11-10 16:22:26.839 |     )
+2026-11-10 16:22:26.839 |   File "/app/ipop/pages/formulario_regra.py", line 553, in _localizar_linha_dominio
+2026-11-10 16:22:26.839 |     expect(linha_por_texto.first).to_be_visible(timeout=timeout)
+2026-11-10 16:22:26.839 |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |   File "/usr/local/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 23501, in to_be_visible
+2026-11-10 16:22:26.839 |     self._sync(
+2026-11-10 16:22:26.839 |     ~~~~~~~~~~^
+2026-11-10 16:22:26.839 |         self._impl_obj.to_be_visible(
+2026-11-10 16:22:26.839 |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |             visible=visible, timeout=to_milliseconds(timeout)
+2026-11-10 16:22:26.839 |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |         )
+2026-11-10 16:22:26.839 |         ^
+2026-11-10 16:22:26.839 |     )
+2026-11-10 16:22:26.839 |     ^
+2026-11-10 16:22:26.839 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+2026-11-10 16:22:26.839 |     return task.result()
+2026-11-10 16:22:26.839 |            ~~~~~~~~~~~^^
+2026-11-10 16:22:26.839 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_assertions.py", line 852, in to_be_visible
+2026-11-10 16:22:26.839 |     await self._expect_impl(
+2026-11-10 16:22:26.839 |     ...<5 lines>...
+2026-11-10 16:22:26.839 |     )
+2026-11-10 16:22:26.839 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_assertions.py", line 128, in _expect_impl
+2026-11-10 16:22:26.839 |     _record_soft_or_raise(
+2026-11-10 16:22:26.839 |     ~~~~~~~~~~~~~~~~~~~~~^
+2026-11-10 16:22:26.839 |         AssertionError(
+2026-11-10 16:22:26.839 |         ^^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |     ...<2 lines>...
+2026-11-10 16:22:26.839 |         self._is_soft,
+2026-11-10 16:22:26.839 |         ^^^^^^^^^^^^^^
+2026-11-10 16:22:26.839 |     )
+2026-11-10 16:22:26.839 |     ^
+2026-11-10 16:22:26.839 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_assertions.py", line 60, in _record_soft_or_raise
+2026-11-10 16:22:26.839 |     raise error
+2026-11-10 16:22:26.839 | AssertionError: Locator expected to be visible
+2026-11-10 16:22:26.839 | Actual value: None
+2026-11-10 16:22:26.839 | Error: element(s) not found 
+2026-11-10 16:22:26.839 | Call log:
+2026-11-10 16:22:26.839 |   - Expect "to_be_visible" locator("#indicadores_lista tbody tr").filter(has=locator("td").filter(has_text=re.compile(r"^\s*398873\s*$"))).first with timeout 30000ms
+2026-11-10 16:22:26.839 |   - waiting for locator("#indicadores_lista tbody tr").filter(has=locator("td").filter(has_text=re.compile(r"^\s*398873\s*$"))).first
+2026-11-10 16:22:26.839 | 
+2026-11-10 16:22:26.839 | Aria snapshot:
+2026-11-10 16:22:26.839 | - navigation:
+2026-11-10 16:22:26.839 |   - button
+2026-11-10 16:22:26.839 |   - text: iPOP
+2026-11-10 16:22:26.839 |   - list:
+2026-11-10 16:22:26.839 |     - listitem: Home
+2026-11-10 16:22:26.839 |     - listitem: Oferta
+2026-11-10 16:22:26.839 |     - listitem: Oferta Complementar
+2026-11-10 16:22:26.839 |     - listitem: Subscrição
+2026-11-10 16:22:26.839 |     - listitem: Exclusão de Oferta
+2026-11-10 16:22:26.839 |     - listitem: Aprovação
+2026-11-10 16:22:26.839 |     - listitem: Delegação
+2026-11-10 16:22:26.839 | - navigation:
+2026-11-10 16:22:26.839 |   - list:
+2026-11-10 16:22:26.839 |     - listitem:
+2026-11-10 16:22:26.839 |       - text: Portal de Operações
+2026-11-10 16:22:26.839 |       - superscript: "4"
+2026-11-10 16:22:26.839 |     - listitem
+2026-11-10 16:22:26.839 |   - list:
+2026-11-10 16:22:26.839 |     - listitem:
+2026-11-10 16:22:26.839 |       - link "Automóvel":
+2026-11-10 16:22:26.839 |         - /url: "#"
+2026-11-10 16:22:26.839 |     - listitem: Guilherme
+2026-11-10 16:22:26.839 |     - listitem: Sair
+2026-11-10 16:22:26.839 | - banner: Automóvel - Subscrição
+2026-11-10 16:22:26.839 | - banner:
+2026-11-10 16:22:26.839 |   - button "Nova"
+2026-11-10 16:22:26.839 |   - button "Copiar"
+2026-11-10 16:22:26.839 |   - button "Detalhes"
+2026-11-10 16:22:26.839 |   - button "Excluir"
+2026-11-10 16:22:26.839 |   - spinbutton "Pesquisar por código"
+2026-11-10 16:22:26.839 | - combobox:
+2026-11-10 16:22:26.839 |   - option "10"
+2026-11-10 16:22:26.839 |   - option "25"
+2026-11-10 16:22:26.839 |   - option "50"
+2026-11-10 16:22:26.839 |   - option "100" [selected]
+2026-11-10 16:22:26.839 | - button "Copiar todos os itens do grid"
+2026-11-10 16:22:26.839 | - button "Exportar para excel"
+2026-11-10 16:22:26.839 | - button "Importar IDs"
+2026-11-10 16:22:26.839 | - button "Selecionar todas as linhas visíveis"
+2026-11-10 16:22:26.839 | - button "Desmarcar todas as linhas"
+2026-11-10 16:22:26.839 | - button "Atualizar o grid"
+2026-11-10 16:22:26.839 | - button "Abrir o filtro avançado"
+2026-11-10 16:22:26.839 | - searchbox: Regra Modelo - Renovação Ituran Não Compreensiva
+2026-11-10 16:22:26.839 | - grid:
+2026-11-10 16:22:26.839 |   - rowgroup:
+2026-11-10 16:22:26.839 |     - 'row "ID: Ordenar colunas de forma ascendente Nome: Ordenar colunas de forma ascendente % Ajuste: Ordenar colunas de forma ascendente Tipo: Ordenar colunas de forma ascendente Início Real: Ordenar colunas de forma ascendente Fim Real: Ordenar colunas de forma ascendente Categoria: Ordenar colunas de forma ascendente Usuário: Ordenar colunas de forma ascendente ID Ant: Ordenar colunas de forma ascendente ID Post: Ordenar colunas de forma ascendente Status: Ordenar colunas de forma ascendente"':
+2026-11-10 16:22:26.839 |       - 'columnheader "ID: Ordenar colunas de forma ascendente"': ↑ ID ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Nome: Ordenar colunas de forma ascendente"': ↑ Nome ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "% Ajuste: Ordenar colunas de forma ascendente"': ↑ % Ajuste ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Tipo: Ordenar colunas de forma ascendente"': ↑ Tipo ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Início Real: Ordenar colunas de forma ascendente"': ↑ Início Real ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Fim Real: Ordenar colunas de forma ascendente"': ↑ Fim Real ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Categoria: Ordenar colunas de forma ascendente"': ↑ Categoria ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Usuário: Ordenar colunas de forma ascendente"': ↑ Usuário ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "ID Ant: Ordenar colunas de forma ascendente"': ↑ ID Ant ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "ID Post: Ordenar colunas de forma ascendente"': ↑ ID Post ↓
+2026-11-10 16:22:26.839 |       - 'columnheader "Status: Ordenar colunas de forma ascendente"': ↑ Status ↓
+2026-11-10 16:22:26.839 |   - rowgroup:
+2026-11-10 16:22:26.839 |     - row "132302 Cópia de Regra Modelo - Renovação Ituran Não Compreensiva 0 Agravo/Desconto 11/11/2026 00:00 10/12/2026 23:59 Guilherme Soares Santos Em aberto":
+2026-11-10 16:22:26.839 |       - gridcell "132302"
+2026-11-10 16:22:26.839 |       - gridcell "Cópia de Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 16:22:26.839 |       - gridcell "0"
+2026-11-10 16:22:26.839 |       - gridcell "Agravo/Desconto"
+2026-11-10 16:22:26.839 |       - gridcell "11/11/2026 00:00"
+2026-11-10 16:22:26.839 |       - gridcell "10/12/2026 23:59"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Guilherme Soares Santos"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Em aberto"
+2026-11-10 16:22:26.839 |     - row "132300 Cópia de Regra Modelo - Renovação Ituran Não Compreensiva 0 Agravo/Desconto 11/11/2026 00:00 10/12/2026 23:59 Guilherme Soares Santos Em aberto":
+2026-11-10 16:22:26.839 |       - gridcell "132300"
+2026-11-10 16:22:26.839 |       - gridcell "Cópia de Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 16:22:26.839 |       - gridcell "0"
+2026-11-10 16:22:26.839 |       - gridcell "Agravo/Desconto"
+2026-11-10 16:22:26.839 |       - gridcell "11/11/2026 00:00"
+2026-11-10 16:22:26.839 |       - gridcell "10/12/2026 23:59"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Guilherme Soares Santos"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Em aberto"
+2026-11-10 16:22:26.839 |     - row "132299 Cópia de Regra Modelo - Renovação Ituran Não Compreensiva 0 Agravo/Desconto 11/11/2026 00:00 10/12/2026 23:59 Guilherme Soares Santos Em aberto":
+2026-11-10 16:22:26.839 |       - gridcell "132299"
+2026-11-10 16:22:26.839 |       - gridcell "Cópia de Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 16:22:26.839 |       - gridcell "0"
+2026-11-10 16:22:26.839 |       - gridcell "Agravo/Desconto"
+2026-11-10 16:22:26.839 |       - gridcell "11/11/2026 00:00"
+2026-11-10 16:22:26.839 |       - gridcell "10/12/2026 23:59"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Guilherme Soares Santos"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Em aberto"
+2026-11-10 16:22:26.839 |     - row "119979 Regra Modelo - Renovação Ituran Não Compreensiva 0 Agravo/Desconto 28/05/2026 00:00 31/12/2070 23:59 Anderson Bernardo Em aberto":
+2026-11-10 16:22:26.839 |       - gridcell "119979"
+2026-11-10 16:22:26.839 |       - gridcell "Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 16:22:26.839 |       - gridcell "0"
+2026-11-10 16:22:26.839 |       - gridcell "Agravo/Desconto"
+2026-11-10 16:22:26.839 |       - gridcell "28/05/2026 00:00"
+2026-11-10 16:22:26.839 |       - gridcell "31/12/2070 23:59"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Anderson Bernardo"
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell
+2026-11-10 16:22:26.839 |       - gridcell "Em aberto"
+2026-11-10 16:22:26.839 | - status: Mostrando de 1 até 4 de 4 registros (Filtrados de 8.572 registros) Selecionado 1 linha
+2026-11-10 16:22:26.839 | - list:
+2026-11-10 16:22:26.839 |   - listitem:
+2026-11-10 16:22:26.839 |     - link "Anterior":
+2026-11-10 16:22:26.839 |       - /url: "#"
+2026-11-10 16:22:26.839 |   - listitem:
+2026-11-10 16:22:26.839 |     - link "1":
+2026-11-10 16:22:26.840 |       - /url: "#"
+2026-11-10 16:22:26.840 |   - listitem:
+2026-11-10 16:22:26.840 |     - link "Próximo":
+2026-11-10 16:22:26.840 |       - /url: "#"
+2026-11-10 16:22:26.840 | - navigation:
+2026-11-10 16:22:26.840 |   - button
+2026-11-10 16:22:26.840 |   - text: Filtro Avançado
+2026-11-10 16:22:26.840 |   - list:
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - text: Variável
+2026-11-10 16:22:26.840 |       - combobox "Variável Variável":
+2026-11-10 16:22:26.840 |         - option "Agência SICREDI"
+2026-11-10 16:22:26.840 |         - option "Ano/Fabricação"
+2026-11-10 16:22:26.840 |         - option "Ano/Modelo do Veículo"
+2026-11-10 16:22:26.840 |         - option "Câmbio do veículo"
+2026-11-10 16:22:26.840 |         - option "Cambio Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Canal de Venda"
+2026-11-10 16:22:26.840 |         - option "Caracteristica Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Carta Verde (seguro na HDI)"
+2026-11-10 16:22:26.840 |         - option "Categ Tarifaria Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Categoria Tarifária"
+2026-11-10 16:22:26.840 |         - option "Classe de Bônus"
+2026-11-10 16:22:26.840 |         - option "Classe Social"
+2026-11-10 16:22:26.840 |         - option "Classe Veículo"
+2026-11-10 16:22:26.840 |         - option "Código Atividade"
+2026-11-10 16:22:26.840 |         - option "Código Parceiro"
+2026-11-10 16:22:26.840 |         - option "Codigo Regiao de Risco"
+2026-11-10 16:22:26.840 |         - option "Combustível"
+2026-11-10 16:22:26.840 |         - option "Combustivel Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Concentração Área Risco"
+2026-11-10 16:22:26.840 |         - option "Condutor Com Dependente"
+2026-11-10 16:22:26.840 |         - option "Condutor x Segurado"
+2026-11-10 16:22:26.840 |         - option "Configuracao Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Congênere"
+2026-11-10 16:22:26.840 |         - option "Corretora"
+2026-11-10 16:22:26.840 |         - option "Dependentes/Residentes"
+2026-11-10 16:22:26.840 |         - option "Empresa"
+2026-11-10 16:22:26.840 |         - option "Estado Civil do Condutor"
+2026-11-10 16:22:26.840 |         - option "Estipulante"
+2026-11-10 16:22:26.840 |         - option "Executivo de Contas HDI"
+2026-11-10 16:22:26.840 |         - option "Faixa Etária do Condutor"
+2026-11-10 16:22:26.840 |         - option "Filial"
+2026-11-10 16:22:26.840 |         - option "Flag Capital Biro"
+2026-11-10 16:22:26.840 |         - option "Flag Capital Metrop Biro"
+2026-11-10 16:22:26.840 |         - option "Flag Detentor da apolice"
+2026-11-10 16:22:26.840 |         - option "Flag NroChassi Restrito"
+2026-11-10 16:22:26.840 |         - option "Flag Possui Blindagem"
+2026-11-10 16:22:26.840 |         - option "Flag Possui CNH"
+2026-11-10 16:22:26.840 |         - option "Flag Possui Kit Gás"
+2026-11-10 16:22:26.840 |         - option "Flag Recálculo da Apólice para Endossos"
+2026-11-10 16:22:26.840 |         - option "Flag Renovacao Troca de veiculo"
+2026-11-10 16:22:26.840 |         - option "Flag Segurável"
+2026-11-10 16:22:26.840 |         - option "Flag Veículo Adaptado"
+2026-11-10 16:22:26.840 |         - option "Fluxo de Cálculo"
+2026-11-10 16:22:26.840 |         - option "Forma de Contratação"
+2026-11-10 16:22:26.840 |         - option "Franquia"
+2026-11-10 16:22:26.840 |         - option "Freio ABS Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Grupos de Modelos"
+2026-11-10 16:22:26.840 |         - option "Guarda do Veículo"
+2026-11-10 16:22:26.840 |         - option "HDI DUO - Planos"
+2026-11-10 16:22:26.840 |         - option "HDI DUO - Renovação"
+2026-11-10 16:22:26.840 |         - option "Importacao Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Marca Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Marcação histórica do CPF no RNS de Colisão"
+2026-11-10 16:22:26.840 |         - option "Modelo do Veículo"
+2026-11-10 16:22:26.840 |         - option "Motor Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Operador de Cálculo"
+2026-11-10 16:22:26.840 |         - option "Origem Marca"
+2026-11-10 16:22:26.840 |         - option "Origem Subscrição"
+2026-11-10 16:22:26.840 |         - option "PerÃodo de VigÃªncia"
+2026-11-10 16:22:26.840 |         - option "Porte Empresa"
+2026-11-10 16:22:26.840 |         - option "Porte Fat Presumido"
+2026-11-10 16:22:26.840 |         - option "Porte Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Produto"
+2026-11-10 16:22:26.840 |         - option "Qtde Populacao Total"
+2026-11-10 16:22:26.840 |         - option "Regiao Continente Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Região de Circulação"
+2026-11-10 16:22:26.840 |         - option "Regiao Unificada Biro"
+2026-11-10 16:22:26.840 |         - option "RNS do Segurado"
+2026-11-10 16:22:26.840 |         - option "RNS do Veículo"
+2026-11-10 16:22:26.840 |         - option "Roteiro de cálculo"
+2026-11-10 16:22:26.840 |         - option "Seção CNAE"
+2026-11-10 16:22:26.840 |         - option "Segmento Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Segurado Proprietario do veiculo(?)"
+2026-11-10 16:22:26.840 |         - option "Sexo do Condutor"
+2026-11-10 16:22:26.840 |         - option "Tempo de Habilitação do Condutor"
+2026-11-10 16:22:26.840 |         - option "Tipo Conta Santander"
+2026-11-10 16:22:26.840 |         - option "Tipo de Operação"
+2026-11-10 16:22:26.840 |         - option "Tipo de Operação do Item"
+2026-11-10 16:22:26.840 |         - option "Tipo de pessoa"
+2026-11-10 16:22:26.840 |         - option "Tipo de Pessoa"
+2026-11-10 16:22:26.840 |         - option "Tipo de Renovação"
+2026-11-10 16:22:26.840 |         - option "Tração do veículo"
+2026-11-10 16:22:26.840 |         - option "Tracao Tipo Vei Biro"
+2026-11-10 16:22:26.840 |         - option "Tracao Vei Biro"
+2026-11-10 16:22:26.840 |         - option "UF Biro"
+2026-11-10 16:22:26.840 |         - option "Utilização de Veículo"
+2026-11-10 16:22:26.840 |         - option "Veiculo PCD"
+2026-11-10 16:22:26.840 |         - option "Zero km"
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - textbox "Pesquisar"
+2026-11-10 16:22:26.840 |       - listbox
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - button "Adicionar"
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - table
+2026-11-10 16:22:26.840 | - button "Categorias"
+2026-11-10 16:22:26.840 | - navigation:
+2026-11-10 16:22:26.840 |   - button
+2026-11-10 16:22:26.840 |   - text: Categorias
+2026-11-10 16:22:26.840 |   - list:
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - textbox "Nova Categoria"
+2026-11-10 16:22:26.840 |       - button [disabled]
+2026-11-10 16:22:26.840 |     - listitem:
+2026-11-10 16:22:26.840 |       - table:
+2026-11-10 16:22:26.840 |         - row "Chamado ID3512":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3512"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3514":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3514"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3468":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3468"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3420":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3420"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3422":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3422"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3418":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3418"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3405":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3405"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3411":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3411"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3232":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3232"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3229":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3229"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3098":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3098"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3107":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3107"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3055":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3055"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3041":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3041"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID3030":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID3030"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2984":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2984"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2866":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2866"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2853":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2853"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2886":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2886"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2754":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2754"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2717":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2717"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2700":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2700"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2602":
+2026-11-10 16:22:26.840 |           - cell "Chamado ID2602"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "ChamadoID2571":
+2026-11-10 16:22:26.840 |           - cell "ChamadoID2571"
+2026-11-10 16:22:26.840 |           - cell:
+2026-11-10 16:22:26.840 |             - button
+2026-11-10 16:22:26.840 |         - row "Chamado ID2578":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2578"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2533":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2533"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2548":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2548"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2455":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2455"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2461":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2461"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2454":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2454"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2442":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2442"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2129":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2129"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID2084":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID2084"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1969":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1969"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1942":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1942"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1930":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1930"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1928":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1928"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1950":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1950"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1920":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1920"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1787":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1787"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1786":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1786"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1799":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1799"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1633":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1633"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1632":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1632"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1626":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1626"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1418":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1418"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1495":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1495"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1575":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1575"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1586":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1586"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1585":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1585"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1587":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1587"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1434":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1434"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1417":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1417"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1403":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1403"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1401":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1401"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Chamado ID1362":
+2026-11-10 16:22:26.841 |           - cell "Chamado ID1362"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "Renovação":
+2026-11-10 16:22:26.841 |           - cell "Renovação"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "EngRev PrmMáximo":
+2026-11-10 16:22:26.841 |           - cell "EngRev PrmMáximo"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.841 |         - row "EngRev PrmMínimo":
+2026-11-10 16:22:26.841 |           - cell "EngRev PrmMínimo"
+2026-11-10 16:22:26.841 |           - cell:
+2026-11-10 16:22:26.841 |             - button
+2026-11-10 16:22:26.842 |         - row "Regras Simplificadas":
+2026-11-10 16:22:26.842 |           - cell "Regras Simplificadas"
+2026-11-10 16:22:26.842 |           - cell:
+2026-11-10 16:22:26.842 |             - button
+2026-11-10 16:22:26.842 |         - row "Ajuste Pricing":
+2026-11-10 16:22:26.842 |           - cell "Ajuste Pricing"
+2026-11-10 16:22:26.842 |           - cell:
+2026-11-10 16:22:26.842 |             - button
+2026-11-10 16:22:26.842 | - navigation:
+2026-11-10 16:22:26.842 |   - list:
+2026-11-10 16:22:26.842 |     - listitem: Automóvel - Subscrição
+2026-11-10 16:22:26.842 |   - list:
+2026-11-10 16:22:26.842 |     - listitem:
+2026-11-10 16:22:26.842 |       - button
+2026-11-10 16:22:26.842 | - heading "Árvore" [level=5]
+2026-11-10 16:22:26.842 | - list:
+2026-11-10 16:22:26.842 |   - listitem:
+2026-11-10 16:22:26.842 |     - checkbox
+2026-11-10 16:22:26.842 |     - list:
+2026-11-10 16:22:26.842 |       - listitem:
+2026-11-10 16:22:26.842 |         - checkbox "Igualdade"
+2026-11-10 16:22:26.842 |         - text: Igualdade
+2026-11-10 16:22:26.842 |         - list:
+2026-11-10 16:22:26.842 |           - listitem:
+2026-11-10 16:22:26.842 |             - checkbox "Empresa"
+2026-11-10 16:22:26.842 |             - text: Empresa
+2026-11-10 16:22:26.842 |             - list:
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "HDI"
+2026-11-10 16:22:26.842 |                 - text: HDI
+2026-11-10 16:22:26.842 |           - listitem:
+2026-11-10 16:22:26.842 |             - checkbox "Produto"
+2026-11-10 16:22:26.842 |             - text: Produto
+2026-11-10 16:22:26.842 |             - list:
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "432"
+2026-11-10 16:22:26.842 |                 - text: "432"
+2026-11-10 16:22:26.842 |           - listitem:
+2026-11-10 16:22:26.842 |             - checkbox "Tipo de Renovação"
+2026-11-10 16:22:26.842 |             - text: Tipo de Renovação
+2026-11-10 16:22:26.842 |             - list:
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "Renovação HDI"
+2026-11-10 16:22:26.842 |                 - text: Renovação HDI
+2026-11-10 16:22:26.842 |       - listitem:
+2026-11-10 16:22:26.842 |         - checkbox "Exclusao"
+2026-11-10 16:22:26.842 |         - text: Exclusao
+2026-11-10 16:22:26.842 |         - list:
+2026-11-10 16:22:26.842 |           - listitem:
+2026-11-10 16:22:26.842 |             - checkbox "Código Parceiro"
+2026-11-10 16:22:26.842 |             - text: Código Parceiro
+2026-11-10 16:22:26.842 |             - list:
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "Ituran"
+2026-11-10 16:22:26.842 |                 - text: Ituran
+2026-11-10 16:22:26.842 |           - listitem:
+2026-11-10 16:22:26.842 |             - checkbox "Forma de Contratação"
+2026-11-10 16:22:26.842 |             - text: Forma de Contratação
+2026-11-10 16:22:26.842 |             - list:
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "Compreensiva"
+2026-11-10 16:22:26.842 |                 - text: Compreensiva
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "Compreensiva - Valor Determinado"
+2026-11-10 16:22:26.842 |                 - text: Compreensiva - Valor Determinado
+2026-11-10 16:22:26.842 |               - listitem:
+2026-11-10 16:22:26.842 |                 - checkbox "Valor de Mercado Referenciado"
+2026-11-10 16:22:26.842 |                 - text: Valor de Mercado Referenciado
+2026-11-10 16:22:26.842 | - button
+2026-11-10 16:22:26.842 | - button [disabled]
+2026-11-10 16:22:26.842 | - button [disabled]
+2026-11-10 16:22:26.842 | - button [disabled]
+2026-11-10 16:22:26.842 | - heading "Variáveis" [level=5]
+2026-11-10 16:22:26.842 | - group:
+2026-11-10 16:22:26.842 |   - text: Grupo de Variável
+2026-11-10 16:22:26.842 |   - combobox "Grupo de Variável":
+2026-11-10 16:22:26.842 |     - option "Favorito"
+2026-11-10 16:22:26.842 |     - option "Todas de Automóvel" [selected]
+2026-11-10 16:22:26.842 |     - option "Principais de Subscrição Auto"
+2026-11-10 16:22:26.842 |     - option "Todas Santander Auto"
+2026-11-10 16:22:26.842 |     - option "Todas Santander Auto (Roteiro 6)"
+2026-11-10 16:22:26.842 |     - option "Principais Frota (Roteiro 8)"
+2026-11-10 16:22:26.842 |   - text: Variável
+2026-11-10 16:22:26.842 |   - combobox:
+2026-11-10 16:22:26.842 |     - option "Acidente Frota Circ"
+2026-11-10 16:22:26.842 |     - option "Acidente Frota Densidade Demografica"
+2026-11-10 16:22:26.842 |     - option "Agência SICREDI"
+2026-11-10 16:22:26.842 |     - option "Agrupamento Ponto Serasa"
+2026-11-10 16:22:26.842 |     - option "Agrupamento Ponto Serasa 2"
+2026-11-10 16:22:26.842 |     - option "Agrupamento RNS do Veículo"
+2026-11-10 16:22:26.842 |     - option "Ano/Fabricação"
+2026-11-10 16:22:26.842 |     - option "Ano/Modelo (até 1999 e acima)"
+2026-11-10 16:22:26.842 |     - option "Ano/Modelo do Veículo"
+2026-11-10 16:22:26.842 |     - option "Atividade Mercado Financeiro"
+2026-11-10 16:22:26.842 |     - option "Bairro de Circulação"
+2026-11-10 16:22:26.842 |     - option "CÃ³digo de regiÃ£o de risco (agrupamento)"
+2026-11-10 16:22:26.842 |     - option "Câmbio do veículo"
+2026-11-10 16:22:26.842 |     - option "Cambio Vei Biro"
+2026-11-10 16:22:26.842 |     - option "Canal de Venda"
+2026-11-10 16:22:26.842 |     - option "Caracteristica Vei Biro"
+2026-11-10 16:22:26.842 |     - option "Carta Verde (seguro na HDI)"
+2026-11-10 16:22:26.842 |     - option "Categ Tarifaria Vei Biro"
+2026-11-10 16:22:26.842 |     - option "Categoria Tarifária"
+2026-11-10 16:22:26.842 |     - option "Categorias Nacional Importado"
+2026-11-10 16:22:26.842 |     - option "Categorias Passeio nacional"
+2026-11-10 16:22:26.842 |     - option "CEP de Circulação"
+2026-11-10 16:22:26.842 |     - option "CEP de Pernoite"
+2026-11-10 16:22:26.842 |     - option "CEP de Pernoite (agrupamento)"
+2026-11-10 16:22:26.842 |     - option "Cidade de Circulação"
+2026-11-10 16:22:26.842 |     - option "Cidades do Sicredi"
+2026-11-10 16:22:26.842 |     - option "Cilindradas Vei Biro"
+2026-11-10 16:22:26.842 |     - option "Classe de Bônus"
+2026-11-10 16:22:26.842 |     - option "Classe Social"
+2026-11-10 16:22:26.842 |     - option "Classe Veículo"
+2026-11-10 16:22:26.842 |     - option "Cluster de Regiao"
+2026-11-10 16:22:26.842 |     - option "Cluster de Veiculo"
+2026-11-10 16:22:26.843 |     - option "CNAE Principal"
+2026-11-10 16:22:26.843 |     - option "Cód Alteração Endosso"
+2026-11-10 16:22:26.843 |     - option "Cód Alteração Endosso - (Agrupamento)"
+2026-11-10 16:22:26.843 |     - option "Código Atividade"
+2026-11-10 16:22:26.843 |     - option "Codigo de regiao de risco (agrupamento)"
+2026-11-10 16:22:26.843 |     - option "Código Loja Santander Auto"
+2026-11-10 16:22:26.843 |     - option "Código Parceiro"
+2026-11-10 16:22:26.843 |     - option "Codigo Regiao de Risco"
+2026-11-10 16:22:26.843 |     - option "Coeficiente Subscrição"
+2026-11-10 16:22:26.843 |     - option "Combustível"
+2026-11-10 16:22:26.843 |     - option "Combustivel Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Comissão (coeficiente)"
+2026-11-10 16:22:26.843 |     - option "Comissão (percentual)"
+2026-11-10 16:22:26.843 |     - option "Comparativo de Renda"
+2026-11-10 16:22:26.843 |     - option "Concentração Área Risco"
+2026-11-10 16:22:26.843 |     - option "Condutor Com Dependente"
+2026-11-10 16:22:26.843 |     - option "Condutor x Segurado"
+2026-11-10 16:22:26.843 |     - option "Configuracao Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Congênere"
+2026-11-10 16:22:26.843 |     - option "Congêneres Grupos"
+2026-11-10 16:22:26.843 |     - option "Corretora"
+2026-11-10 16:22:26.843 |     - option "CPF / CNPJ (agrupamento)" [selected]
+2026-11-10 16:22:26.843 |     - option "CPF / CNPJ do Segurado"
+2026-11-10 16:22:26.843 |     - option "Dependentes/Residentes"
+2026-11-10 16:22:26.843 |     - option "Desconto Agravo Conversão"
+2026-11-10 16:22:26.843 |     - option "Desconto Oferta"
+2026-11-10 16:22:26.843 |     - option "Dias de vigência"
+2026-11-10 16:22:26.843 |     - option "Distancia a capital"
+2026-11-10 16:22:26.843 |     - option "Empresa"
+2026-11-10 16:22:26.843 |     - option "Estado Civil do Condutor"
+2026-11-10 16:22:26.843 |     - option "Estipulante"
+2026-11-10 16:22:26.843 |     - option "Executivo de Contas HDI"
+2026-11-10 16:22:26.843 |     - option "Faixa Etária do Condutor"
+2026-11-10 16:22:26.843 |     - option "Fator Aleatório Controle"
+2026-11-10 16:22:26.843 |     - option "Fator Aleatorio Rot Unificado"
+2026-11-10 16:22:26.843 |     - option "Filial"
+2026-11-10 16:22:26.843 |     - option "Filial Capital"
+2026-11-10 16:22:26.843 |     - option "FIPE"
+2026-11-10 16:22:26.843 |     - option "FIPE (percentual)"
+2026-11-10 16:22:26.843 |     - option "Flag Capital Biro"
+2026-11-10 16:22:26.843 |     - option "Flag Capital Metrop Biro"
+2026-11-10 16:22:26.843 |     - option "Flag Detentor da apolice"
+2026-11-10 16:22:26.843 |     - option "Flag NroChassi Restrito"
+2026-11-10 16:22:26.843 |     - option "Flag Obito"
+2026-11-10 16:22:26.843 |     - option "Flag Possui Blindagem"
+2026-11-10 16:22:26.843 |     - option "Flag Possui CNH"
+2026-11-10 16:22:26.843 |     - option "Flag Possui Kit Gás"
+2026-11-10 16:22:26.843 |     - option "Flag Recálculo da Apólice para Endossos"
+2026-11-10 16:22:26.843 |     - option "Flag Renovacao Troca de veiculo"
+2026-11-10 16:22:26.843 |     - option "Flag Restrito"
+2026-11-10 16:22:26.843 |     - option "Flag Segurável"
+2026-11-10 16:22:26.843 |     - option "Flag Veículo Adaptado"
+2026-11-10 16:22:26.843 |     - option "Fluxo de Cálculo"
+2026-11-10 16:22:26.843 |     - option "Forma de Contratação"
+2026-11-10 16:22:26.843 |     - option "Franquia"
+2026-11-10 16:22:26.843 |     - option "Freio ABS Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Frequencia Colisao SUSEP"
+2026-11-10 16:22:26.843 |     - option "Frequencia Roubo e Furto SUSEP"
+2026-11-10 16:22:26.843 |     - option "Grau de Sucateamento"
+2026-11-10 16:22:26.843 |     - option "Grupo de Produtos"
+2026-11-10 16:22:26.843 |     - option "Grupos de Corretoras"
+2026-11-10 16:22:26.843 |     - option "Grupos de Modelos"
+2026-11-10 16:22:26.843 |     - option "Grupos de Modelos (agrupamento)"
+2026-11-10 16:22:26.843 |     - option "Guarda do Veículo"
+2026-11-10 16:22:26.843 |     - option "HDI DUO - Planos"
+2026-11-10 16:22:26.843 |     - option "HDI DUO - Renovação"
+2026-11-10 16:22:26.843 |     - option "Idade Condutor"
+2026-11-10 16:22:26.843 |     - option "Idade Condutor - BVS"
+2026-11-10 16:22:26.843 |     - option "Idade do Segurado"
+2026-11-10 16:22:26.843 |     - option "Idade do Veículo"
+2026-11-10 16:22:26.843 |     - option "Idade do Veículo (por faixa)"
+2026-11-10 16:22:26.843 |     - option "Idade Segurado - BVS"
+2026-11-10 16:22:26.843 |     - option "IDHM 2010"
+2026-11-10 16:22:26.843 |     - option "Importacao Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Índice de Gini 2010"
+2026-11-10 16:22:26.843 |     - option "Mais Jovem BVS - Seg x Cond"
+2026-11-10 16:22:26.843 |     - option "Marca do Veículo"
+2026-11-10 16:22:26.843 |     - option "Marca Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Marcação histórica do CPF no RNS de Colisão"
+2026-11-10 16:22:26.843 |     - option "Modelo de Frequencia Colisao Parcial"
+2026-11-10 16:22:26.843 |     - option "Modelo de Frequencia Colisao PT"
+2026-11-10 16:22:26.843 |     - option "Modelo de Propensão"
+2026-11-10 16:22:26.843 |     - option "Modelo de Roubo e Furto PT"
+2026-11-10 16:22:26.843 |     - option "Modelo do Veículo"
+2026-11-10 16:22:26.843 |     - option "Modelo Frequencia Assistencia Guincho"
+2026-11-10 16:22:26.843 |     - option "Modelo Frequencia DM"
+2026-11-10 16:22:26.843 |     - option "Modelo GMI Colisao Parcial"
+2026-11-10 16:22:26.843 |     - option "Modelo PCA PT"
+2026-11-10 16:22:26.843 |     - option "Modelos"
+2026-11-10 16:22:26.843 |     - option "Modelos de Veículos Categorias"
+2026-11-10 16:22:26.843 |     - option "Modelos de Veículos Premium"
+2026-11-10 16:22:26.843 |     - option "Motor Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Natureza JurÍdica"
+2026-11-10 16:22:26.843 |     - option "Nivel Relacionamento Credito"
+2026-11-10 16:22:26.843 |     - option "Operador de Cálculo"
+2026-11-10 16:22:26.843 |     - option "Origem Marca"
+2026-11-10 16:22:26.843 |     - option "Origem Subscrição"
+2026-11-10 16:22:26.843 |     - option "Passagem Web"
+2026-11-10 16:22:26.843 |     - option "PerÃodo de VigÃªncia"
+2026-11-10 16:22:26.843 |     - option "Percentual IS Vlr Mercado"
+2026-11-10 16:22:26.843 |     - option "Peso Carga Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Peso Vei Biro"
+2026-11-10 16:22:26.843 |     - option "PIB percapita da cidade"
+2026-11-10 16:22:26.843 |     - option "Ponto Serasa"
+2026-11-10 16:22:26.843 |     - option "Ponto Serasa Original"
+2026-11-10 16:22:26.843 |     - option "Pontuação Fonte RF"
+2026-11-10 16:22:26.843 |     - option "Pontuação Perfil"
+2026-11-10 16:22:26.843 |     - option "Pontuacao Score AutoGlass"
+2026-11-10 16:22:26.843 |     - option "Pontuacao Score de RF (Neurotech)"
+2026-11-10 16:22:26.843 |     - option "Pontuacao Score de RF (Serasa)"
+2026-11-10 16:22:26.843 |     - option "Pontuacao Score Sinistro (versao atualizada)"
+2026-11-10 16:22:26.843 |     - option "Porte Empresa"
+2026-11-10 16:22:26.843 |     - option "Porte Fat Presumido"
+2026-11-10 16:22:26.843 |     - option "Porte Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Potencia Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Produto"
+2026-11-10 16:22:26.843 |     - option "Qtd Portas Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Qtd Sinistro HDI PP - Unificado"
+2026-11-10 16:22:26.843 |     - option "Qtd Sinistro HDI RCF - Unificado"
+2026-11-10 16:22:26.843 |     - option "Qtde de Itens"
+2026-11-10 16:22:26.843 |     - option "Qtde Meses Relac Consecutivo"
+2026-11-10 16:22:26.843 |     - option "Qtde Meses Relação Consecutivo"
+2026-11-10 16:22:26.843 |     - option "Qtde Meses Relação Total"
+2026-11-10 16:22:26.843 |     - option "Qtde Populacao Total"
+2026-11-10 16:22:26.843 |     - option "Qtde População Total"
+2026-11-10 16:22:26.843 |     - option "Qtde Sinistro 431"
+2026-11-10 16:22:26.843 |     - option "Qtde Sinistro Motor"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros HDI PP"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros HDI PT"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros HDI RC"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros HDI RF"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros RNS PT"
+2026-11-10 16:22:26.843 |     - option "Qtde Sinistros RNS PT - Unificado"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros RNS RF"
+2026-11-10 16:22:26.843 |     - option "Qtde Sinistros RNS RF - Unificado"
+2026-11-10 16:22:26.843 |     - option "Qtde sinistros RNS Total"
+2026-11-10 16:22:26.843 |     - option "Qtde Sinistros RNS Total - Unificado"
+2026-11-10 16:22:26.843 |     - option "Qtde Vezes Mais Negocios"
+2026-11-10 16:22:26.843 |     - option "Quantidade CCF"
+2026-11-10 16:22:26.843 |     - option "Quantidade Cheque"
+2026-11-10 16:22:26.843 |     - option "Quantidade de Colaboradores"
+2026-11-10 16:22:26.843 |     - option "Quantidade de Protestos Serasa"
+2026-11-10 16:22:26.843 |     - option "Quantidade de Sinistros"
+2026-11-10 16:22:26.843 |     - option "Quantidade Protesto"
+2026-11-10 16:22:26.843 |     - option "Quantidade SCPC"
+2026-11-10 16:22:26.843 |     - option "Região Circulação (agrupamento)"
+2026-11-10 16:22:26.843 |     - option "Regiao Continente Vei Biro"
+2026-11-10 16:22:26.843 |     - option "Região de Circulação"
+2026-11-10 16:22:26.843 |     - option "Regiao Unificada Biro"
+2026-11-10 16:22:26.843 |     - option "Regional"
+2026-11-10 16:22:26.843 |     - option "Relação do Prêmio Final/IS em %"
+2026-11-10 16:22:26.843 |     - option "Relação do Prêmio/IS em %"
+2026-11-10 16:22:26.843 |     - option "RNS do Segurado"
+2026-11-10 16:22:26.843 |     - option "RNS do Veículo"
+2026-11-10 16:22:26.843 |     - option "RNS Segurado (RANGE)"
+2026-11-10 16:22:26.843 |     - option "RNS Veiculo (RANGE)"
+2026-11-10 16:22:26.843 |     - option "Roteiro de cálculo"
+2026-11-10 16:22:26.843 |     - option "Score AutoGlass V1 Unificado"
+2026-11-10 16:22:26.843 |     - option "Score AutoGlass V2 Unificado"
+2026-11-10 16:22:26.844 |     - option "Score BVS Customizado - Pior"
+2026-11-10 16:22:26.844 |     - option "Score BVS Customizado - Segurado"
+2026-11-10 16:22:26.844 |     - option "Score BVS Customizado- Condutor"
+2026-11-10 16:22:26.844 |     - option "Score BVS Liberty"
+2026-11-10 16:22:26.844 |     - option "Score BVS R12 - Condutor"
+2026-11-10 16:22:26.844 |     - option "Score BVS R12 - Pior"
+2026-11-10 16:22:26.844 |     - option "Score BVS R12 - Segurado"
+2026-11-10 16:22:26.844 |     - option "Score BVS Unificado - Condutor"
+2026-11-10 16:22:26.844 |     - option "Score BVS Unificado - Pior"
+2026-11-10 16:22:26.844 |     - option "Score BVS Unificado - Segurado"
+2026-11-10 16:22:26.844 |     - option "Score Colisão"
+2026-11-10 16:22:26.844 |     - option "Score Conversão"
+2026-11-10 16:22:26.844 |     - option "Score Customizado"
+2026-11-10 16:22:26.844 |     - option "Score Customizado 2"
+2026-11-10 16:22:26.844 |     - option "Score Multi Score"
+2026-11-10 16:22:26.844 |     - option "Score PJ Aceitação"
+2026-11-10 16:22:26.844 |     - option "Score PJ Perda Parc"
+2026-11-10 16:22:26.844 |     - option "Score PJ Perda Total"
+2026-11-10 16:22:26.844 |     - option "Score Renovação"
+2026-11-10 16:22:26.844 |     - option "Score RF Liberty"
+2026-11-10 16:22:26.844 |     - option "Score RF Serasa Unificado"
+2026-11-10 16:22:26.844 |     - option "Score Risco Cadastral"
+2026-11-10 16:22:26.844 |     - option "Score Risco Demográfico"
+2026-11-10 16:22:26.844 |     - option "Score Risco Georreferenciado"
+2026-11-10 16:22:26.844 |     - option "Score Risco HDI"
+2026-11-10 16:22:26.844 |     - option "Score Risco Web"
+2026-11-10 16:22:26.844 |     - option "Score Roubo Furto"
+2026-11-10 16:22:26.844 |     - option "Score Sem Oferta"
+2026-11-10 16:22:26.844 |     - option "Score Serasa 882 Segurado Unificado"
+2026-11-10 16:22:26.844 |     - option "Score Sinistro"
+2026-11-10 16:22:26.844 |     - option "Score Sinistro Liberty"
+2026-11-10 16:22:26.844 |     - option "ScrCrdMerPJ3"
+2026-11-10 16:22:26.844 |     - option "Seção CNAE"
+2026-11-10 16:22:26.844 |     - option "Segmento Vei Biro"
+2026-11-10 16:22:26.844 |     - option "Segurado Proprietario do veiculo(?)"
+2026-11-10 16:22:26.844 |     - option "Sexo do Condutor"
+2026-11-10 16:22:26.844 |     - option "Sicredi Cidades"
+2026-11-10 16:22:26.844 |     - option "Tempo Atividade"
+2026-11-10 16:22:26.844 |     - option "Tempo de Habilitação do Condutor"
+2026-11-10 16:22:26.844 |     - option "Tempo Sinistro Anos"
+2026-11-10 16:22:26.844 |     - option "Tempo Sinistro Anos - Unificado"
+2026-11-10 16:22:26.844 |     - option "Tipo Conta Santander"
+2026-11-10 16:22:26.844 |     - option "Tipo de Negócio"
+2026-11-10 16:22:26.844 |     - option "Tipo de Operação"
+2026-11-10 16:22:26.844 |     - option "Tipo de Operação do Item"
+2026-11-10 16:22:26.844 |     - option "Tipo de Pessoa"
+2026-11-10 16:22:26.844 |     - option "Tipo de pessoa"
+2026-11-10 16:22:26.844 |     - option "Tipo de Renovação"
+2026-11-10 16:22:26.844 |     - option "Tipo de Renovação II"
+2026-11-10 16:22:26.844 |     - option "Tração do veículo"
+2026-11-10 16:22:26.844 |     - option "Tracao Tipo Vei Biro"
+2026-11-10 16:22:26.844 |     - option "Tracao Vei Biro"
+2026-11-10 16:22:26.844 |     - option "UF Biro"
+2026-11-10 16:22:26.844 |     - option "Última Passagem E-mail"
+2026-11-10 16:22:26.844 |     - option "Última Passagem Mercado Financeiro"
+2026-11-10 16:22:26.844 |     - option "Utilização de Veículo"
+2026-11-10 16:22:26.844 |     - option "Valor da comissão"
+2026-11-10 16:22:26.844 |     - option "Valor do prêmio Líquido"
+2026-11-10 16:22:26.844 |     - option "Valor Franquia obrig determ"
+2026-11-10 16:22:26.844 |     - option "Valor Franquia obrig mercado"
+2026-11-10 16:22:26.844 |     - option "Valor IS APP Invalidez"
+2026-11-10 16:22:26.844 |     - option "Valor IS APP Morte"
+2026-11-10 16:22:26.844 |     - option "Valor IS Casco Det"
+2026-11-10 16:22:26.844 |     - option "Valor IS Casco Merc"
+2026-11-10 16:22:26.844 |     - option "Valor IS RCF DM"
+2026-11-10 16:22:26.844 |     - option "Valor IS RCF DP"
+2026-11-10 16:22:26.844 |     - option "Valor Prm Líquido Total"
+2026-11-10 16:22:26.844 |     - option "Valor Protesto"
+2026-11-10 16:22:26.844 |     - option "Valor Protesto"
+2026-11-10 16:22:26.844 |     - option "Valor REFIN Serasa"
+2026-11-10 16:22:26.844 |     - option "Valor SCPC"
+2026-11-10 16:22:26.844 |     - option "Valor SCPC"
+2026-11-10 16:22:26.844 |     - option "Variável 17"
+2026-11-10 16:22:26.844 |     - option "Variável 19"
+2026-11-10 16:22:26.844 |     - option "Variável 5"
+2026-11-10 16:22:26.844 |     - option "Veiculo PCD"
+2026-11-10 16:22:26.844 |     - option "Veículos Filial Vitória"
+2026-11-10 16:22:26.844 |     - option "Vencedor Score - Condutor x Segurado"
+2026-11-10 16:22:26.844 |     - option "Zero km"
+2026-11-10 16:22:26.844 |     - option "Zona de Circulação"
+2026-11-10 16:22:26.844 |   - button
+2026-11-10 16:22:26.844 |   - text: Tipo de Lista
+2026-11-10 16:22:26.844 |   - combobox "Tipo de Lista":
+2026-11-10 16:22:26.844 |     - option "Completa"
+2026-11-10 16:22:26.844 |     - option "Filtrada"
+2026-11-10 16:22:26.844 |     - option "Off-line" [selected]
+2026-11-10 16:22:26.844 |     - option "Selecionada"
+2026-11-10 16:22:26.844 | - heading "Indicadores" [level=5]
+2026-11-10 16:22:26.844 | - button "Copiar todos os itens do grid"
+2026-11-10 16:22:26.844 | - button "Exportar para excel"
+2026-11-10 16:22:26.844 | - button "Selecionar todas as linhas visíveis"
+2026-11-10 16:22:26.844 | - button "Desmarcar todas as linhas"
+2026-11-10 16:22:26.844 | - searchbox
+2026-11-10 16:22:26.844 | - grid:
+2026-11-10 16:22:26.844 |   - rowgroup:
+2026-11-10 16:22:26.844 |     - 'row "Detalhe: Ordenar colunas de forma ascendente Cot: Ordenar colunas de forma ascendente Conv (%): Ordenar colunas de forma ascendente Vig: Ordenar colunas de forma ascendente Sin (%): Ordenar colunas de forma ascendente Freq (%): Ordenar colunas de forma ascendente"':
+2026-11-10 16:22:26.844 |       - 'columnheader "Detalhe: Ordenar colunas de forma ascendente"': ↑ Detalhe ↓
+2026-11-10 16:22:26.844 |       - 'columnheader "Cot: Ordenar colunas de forma ascendente"': ↑ Cot ↓
+2026-11-10 16:22:26.844 |       - 'columnheader "Conv (%): Ordenar colunas de forma ascendente"': ↑ Conv (%) ↓
+2026-11-10 16:22:26.844 |       - 'columnheader "Vig: Ordenar colunas de forma ascendente"': ↑ Vig ↓
+2026-11-10 16:22:26.844 |       - 'columnheader "Sin (%): Ordenar colunas de forma ascendente"': ↑ Sin (%) ↓
+2026-11-10 16:22:26.844 |       - 'columnheader "Freq (%): Ordenar colunas de forma ascendente"': ↑ Freq (%) ↓
+2026-11-10 16:22:26.844 |   - rowgroup:
+2026-11-10 16:22:26.844 |     - row "R_ITURAN_OUT26 _C_Oferta_12%":
+2026-11-10 16:22:26.844 |       - gridcell "R_ITURAN_OUT26 _C_Oferta_12%"
+2026-11-10 16:22:26.844 |       - gridcell
+2026-11-10 16:22:26.844 |       - gridcell
+2026-11-10 16:22:26.844 |       - gridcell
+2026-11-10 16:22:26.844 |       - gridcell
+2026-11-10 16:22:26.844 |       - gridcell
+2026-11-10 16:22:26.844 | - heading "Regra" [level=5]
+2026-11-10 16:22:26.844 | - group:
+2026-11-10 16:22:26.844 |   - text: ID
+2026-11-10 16:22:26.844 |   - combobox "ID" [disabled]:
+2026-11-10 16:22:26.844 |     - option "132302" [selected]
+2026-11-10 16:22:26.844 |   - text: Nome da Regra
+2026-11-10 16:22:26.844 |   - textbox "Nome da Regra": TestesSubs1
+2026-11-10 16:22:26.844 |   - text: Data Inicial
+2026-11-10 16:22:26.844 |   - textbox "Data Inicial": 2026-10-27
+2026-11-10 16:22:26.844 |   - text: Hora Inicial
+2026-11-10 16:22:26.844 |   - textbox "Hora Inicial": 00:00
+2026-11-10 16:22:26.844 |   - text: Data Final
+2026-11-10 16:22:26.844 |   - textbox "Data Final": 2026-10-29
+2026-11-10 16:22:26.844 |   - text: Hora Final
+2026-11-10 16:22:26.844 |   - textbox "Hora Final": 23:59
+2026-11-10 16:22:26.844 |   - text: "% Ajuste"
+2026-11-10 16:22:26.845 |   - spinbutton "% Ajuste": "3"
+2026-11-10 16:22:26.845 |   - text: Tipo
+2026-11-10 16:22:26.845 |   - combobox "Tipo":
+2026-11-10 16:22:26.845 |     - option "Não exibe prêmio"
+2026-11-10 16:22:26.845 |     - option "Agravo/Desconto" [selected]
+2026-11-10 16:22:26.845 |     - option "Ajuste por relac. IS"
+2026-11-10 16:22:26.845 |   - text: Categoria
+2026-11-10 16:22:26.845 |   - combobox "Categoria":
+2026-11-10 16:22:26.845 |     - option "Sem Categoria" [selected]
+2026-11-10 16:22:26.845 |     - option "Chamado ID3512"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3514"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3468"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3420"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3422"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3418"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3405"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3411"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3232"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3229"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3098"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3107"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3055"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3041"
+2026-11-10 16:22:26.845 |     - option "Chamado ID3030"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2984"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2866"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2853"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2886"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2754"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2717"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2700"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2602"
+2026-11-10 16:22:26.845 |     - option "ChamadoID2571"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2578"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2533"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2548"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2455"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2461"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2454"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2442"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2129"
+2026-11-10 16:22:26.845 |     - option "Chamado ID2084"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1969"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1942"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1930"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1928"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1950"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1920"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1787"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1786"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1799"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1633"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1632"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1626"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1418"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1495"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1575"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1586"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1585"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1587"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1434"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1417"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1403"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1401"
+2026-11-10 16:22:26.845 |     - option "Chamado ID1362"
+2026-11-10 16:22:26.845 |     - option "Renovação"
+2026-11-10 16:22:26.845 |     - option "EngRev PrmMáximo"
+2026-11-10 16:22:26.845 |     - option "EngRev PrmMínimo"
+2026-11-10 16:22:26.845 |     - option "Regras Simplificadas"
+2026-11-10 16:22:26.845 |     - option "Ajuste Pricing"
+2026-11-10 16:22:26.845 |   - text: Mensagem HDI Digital
+2026-11-10 16:22:26.845 |   - textbox "Mensagem HDI Digital":
+2026-11-10 16:22:26.845 |     - /placeholder: Mensagem HDI Digital...
+2026-11-10 16:22:26.845 |   - text: Comentário
+2026-11-10 16:22:26.845 |   - textbox "Comentário"
+2026-11-10 16:22:26.845 | - button "Salvar"
+2026-11-10 16:22:26.845 | - button "Excluir"
+2026-11-10 16:22:26.845 | - button "Retificar" [disabled]
+2026-11-10 16:22:26.845 | - button "Aprovação" [disabled]
+2026-11-10 16:22:26.845 | - button "Encerrar" [disabled]
+2026-11-10 16:22:26.845 | - button "Histórico"
+2026-11-10 16:22:26.845 | - navigation:
+2026-11-10 16:22:26.845 |   - button
+2026-11-10 16:22:26.845 |   - text: Histórico
+2026-11-10 16:22:26.845 |   - list:
+2026-11-10 16:22:26.845 |     - listitem:
+2026-11-10 16:22:26.845 |       - table:
+2026-11-10 16:22:26.845 |         - rowgroup:
+2026-11-10 16:22:26.845 |           - row "Id Nome Status Inicio Fim Ação":
+2026-11-10 16:22:26.845 |             - columnheader "Id"
+2026-11-10 16:22:26.845 |             - columnheader "Nome"
+2026-11-10 16:22:26.845 |             - columnheader "Status"
+2026-11-10 16:22:26.845 |             - columnheader "Inicio"
+2026-11-10 16:22:26.845 |             - columnheader "Fim"
+2026-11-10 16:22:26.845 |             - columnheader "Ação"
+2026-11-10 16:22:26.845 |         - rowgroup:
+2026-11-10 16:22:26.845 |           - row "132302 Cópia de Regra Modelo - Renovação Ituran Não Compreensiva Em aberto 10/12/2026 23:59 Agravo/Desconto":
+2026-11-10 16:22:26.845 |             - cell "132302"
+2026-11-10 16:22:26.845 |             - cell "Cópia de Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 16:22:26.845 |             - cell "Em aberto"
+2026-11-10 16:22:26.845 |             - cell
+2026-11-10 16:22:26.845 |             - cell "10/12/2026 23:59"
+2026-11-10 16:22:26.845 |             - cell "Agravo/Desconto"
+2026-11-10 16:22:27.937 | 2026-11-10 16:22:27 | INFO    | ipop.worker | Terminou 20261110-121954-cafccc com código 5
