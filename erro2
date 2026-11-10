@@ -1,0 +1,847 @@
+2026-11-10 14:35:34.145 | 2026-11-10 14:35:34 | INFO    | ipop.worker | Worker worker-1 no ar (ambiente padrão hml).
+2026-11-10 14:35:43.173 | 2026-11-10 14:35:43 | INFO    | ipop.worker | Iniciando cadastro 20261110-121954-cafccc (ModeloRegras-SubseOferta 2.xlsx)
+2026-11-10 14:35:43.458 | 2026-11-10 14:35:43 | INFO    | ipop.robo | [rede] IPOP (hml) www.hdi.com.br:443: Conectou (10.7.0.6).
+2026-11-10 14:35:43.458 | 2026-11-10 14:35:43 | INFO    | ipop.robo | [rede] SQL Server 10.155.245.38:1433: Conectou (10.155.245.38).
+2026-11-10 14:35:43.458 | 2026-11-10 14:35:43 | INFO    | ipop.robo | [rede] Driver ODBC ODBC Driver 18 for SQL Server: Instalado.
+2026-11-10 14:35:43.458 | 2026-11-10 14:35:43 | INFO    | ipop.robo | [rede] Login SQL RosieRep como HDIS_RRIPH: Consulta de teste OK.
+2026-11-10 14:35:43.750 | 2026-11-10 14:35:43 | INFO    | ipop.services.leitor_pedido | Abas lidas: ['Módulo Subscrição', 'Módulo Oferta'] | ignoradas: ['Domínios RNS Segurado', 'Domínios RNS Veículo', 'RegrasModelo', 'Tabela de variáveis']
+2026-11-10 14:35:43.750 | 2026-11-10 14:35:43 | INFO    | ipop.services.construtor_regras | 2 regra(s) lidas da planilha.
+2026-11-10 14:35:43.955 | 2026-11-10 14:35:43 | WARNING | ipop.services.construtor_regras | [Módulo Subscrição linha 2] TestesSubs1: Variáveis: CPF / CNPJ (agrupamento) (193) · 398873 não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 14:35:43.955 | 2026-11-10 14:35:43 | WARNING | ipop.services.construtor_regras | [Módulo Oferta linha 2] R_ITURAN_SET26 _C_Oferta_5%: Variáveis: CPF / CNPJ (agrupamento) (193) · R_ITURAN_SET26 _C_Oferta_5% não está nas tabelas do IPOP. O robô vai procurar pelo texto na lista.
+2026-11-10 14:35:43.956 | 2026-11-10 14:35:43 | INFO    | ipop.services.construtor_regras | 2 regra(s) prontas para cadastro.
+2026-11-10 14:36:02.386 | 2026-11-10 14:36:02 | INFO    | ipop.robo | === Regra 1/2: TestesSubs1
+2026-11-10 14:36:39.789 | 2026-11-10 14:36:39 | WARNING | ipop.services.cadastro | Modelo 119979 não achado pelo ID (Locator expected to be visible
+2026-11-10 14:36:39.790 | Actual value: None
+2026-11-10 14:36:39.790 | Error: element(s) not found 
+2026-11-10 14:36:39.790 | Call log:
+2026-11-10 14:36:39.790 |   - Expect "to_be_visible" locator("#regras_lista tbody td").filter(has_text=re.compile(r"^\s*119979\s*$")).first with timeout 15000ms
+2026-11-10 14:36:39.790 |   - waiting for locator("#regras_lista tbody td").filter(has_text=re.compile(r"^\s*119979\s*$")).first
+2026-11-10 14:36:39.790 | 
+2026-11-10 14:36:39.790 | Aria snapshot:
+2026-11-10 14:36:39.790 | - navigation:
+2026-11-10 14:36:39.790 |   - button
+2026-11-10 14:36:39.790 |   - text: iPOP
+2026-11-10 14:36:39.790 |   - list:
+2026-11-10 14:36:39.790 |     - listitem: Home
+2026-11-10 14:36:39.790 |     - listitem: Oferta
+2026-11-10 14:36:39.790 |     - listitem: Oferta Complementar
+2026-11-10 14:36:39.790 |     - listitem: Subscrição
+2026-11-10 14:36:39.790 |     - listitem: Exclusão de Oferta
+2026-11-10 14:36:39.790 |     - listitem: Aprovação
+2026-11-10 14:36:39.790 |     - listitem: Delegação
+2026-11-10 14:36:39.790 | - navigation:
+2026-11-10 14:36:39.790 |   - list:
+2026-11-10 14:36:39.790 |     - listitem:
+2026-11-10 14:36:39.790 |       - text: Portal de Operações
+2026-11-10 14:36:39.790 |       - superscript: "4"
+2026-11-10 14:36:39.790 |     - listitem
+2026-11-10 14:36:39.790 |   - list:
+2026-11-10 14:36:39.790 |     - listitem:
+2026-11-10 14:36:39.790 |       - link "Automóvel":
+2026-11-10 14:36:39.790 |         - /url: "#"
+2026-11-10 14:36:39.790 |     - listitem: Guilherme
+2026-11-10 14:36:39.790 |     - listitem: Sair
+2026-11-10 14:36:39.790 | - banner: Automóvel - Subscrição
+2026-11-10 14:36:39.790 | - banner:
+2026-11-10 14:36:39.790 |   - button "Nova"
+2026-11-10 14:36:39.790 |   - button "Copiar" [disabled]
+2026-11-10 14:36:39.790 |   - button "Detalhes" [disabled]
+2026-11-10 14:36:39.790 |   - button "Excluir" [disabled]
+2026-11-10 14:36:39.790 |   - spinbutton "Pesquisar por código"
+2026-11-10 14:36:39.790 | - combobox:
+2026-11-10 14:36:39.790 |   - option "10" [selected]
+2026-11-10 14:36:39.790 |   - option "25"
+2026-11-10 14:36:39.790 |   - option "50"
+2026-11-10 14:36:39.790 |   - option "100"
+2026-11-10 14:36:39.790 | - button "Copiar todos os itens do grid"
+2026-11-10 14:36:39.790 | - button "Exportar para excel"
+2026-11-10 14:36:39.790 | - button "Importar IDs"
+2026-11-10 14:36:39.790 | - button "Selecionar todas as linhas visíveis"
+2026-11-10 14:36:39.790 | - button "Desmarcar todas as linhas"
+2026-11-10 14:36:39.790 | - button "Atualizar o grid"
+2026-11-10 14:36:39.790 | - button "Abrir o filtro avançado"
+2026-11-10 14:36:39.790 | - searchbox
+2026-11-10 14:36:39.790 | - grid:
+2026-11-10 14:36:39.790 |   - rowgroup:
+2026-11-10 14:36:39.790 |     - 'row "ID: Ordenar colunas de forma ascendente Nome: Ordenar colunas de forma ascendente % Ajuste: Ordenar colunas de forma ascendente Tipo: Ordenar colunas de forma ascendente Início Real: Ordenar colunas de forma ascendente Fim Real: Ordenar colunas de forma ascendente Categoria: Ordenar colunas de forma ascendente Usuário: Ordenar colunas de forma ascendente ID Ant: Ordenar colunas de forma ascendente ID Post: Ordenar colunas de forma ascendente Status: Ordenar colunas de forma ascendente"':
+2026-11-10 14:36:39.790 |       - 'columnheader "ID: Ordenar colunas de forma ascendente"': ↑ ID ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Nome: Ordenar colunas de forma ascendente"': ↑ Nome ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "% Ajuste: Ordenar colunas de forma ascendente"': ↑ % Ajuste ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Tipo: Ordenar colunas de forma ascendente"': ↑ Tipo ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Início Real: Ordenar colunas de forma ascendente"': ↑ Início Real ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Fim Real: Ordenar colunas de forma ascendente"': ↑ Fim Real ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Categoria: Ordenar colunas de forma ascendente"': ↑ Categoria ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Usuário: Ordenar colunas de forma ascendente"': ↑ Usuário ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "ID Ant: Ordenar colunas de forma ascendente"': ↑ ID Ant ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "ID Post: Ordenar colunas de forma ascendente"': ↑ ID Post ↓
+2026-11-10 14:36:39.790 |       - 'columnheader "Status: Ordenar colunas de forma ascendente"': ↑ Status ↓
+2026-11-10 14:36:39.790 |   - rowgroup:
+2026-11-10 14:36:39.790 |     - row "132298 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor51+ -7.3 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132298"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor51+"
+2026-11-10 14:36:39.790 |       - gridcell "-7.3"
+2026-11-10 14:36:39.790 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.790 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.790 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Vigente"
+2026-11-10 14:36:39.790 |     - row "132297 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor41-50 -4.9 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132297"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor41-50"
+2026-11-10 14:36:39.790 |       - gridcell "-4.9"
+2026-11-10 14:36:39.790 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.790 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.790 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Vigente"
+2026-11-10 14:36:39.790 |     - row "132296 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor31-40 -5.2 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132296"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo6-10_IdadeCondutor31-40"
+2026-11-10 14:36:39.790 |       - gridcell "-5.2"
+2026-11-10 14:36:39.790 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.790 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.790 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Vigente"
+2026-11-10 14:36:39.790 |     - row "132295 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor51+ -22.2 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132295"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor51+"
+2026-11-10 14:36:39.790 |       - gridcell "-22.2"
+2026-11-10 14:36:39.790 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.790 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.790 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Vigente"
+2026-11-10 14:36:39.790 |     - row "132294 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor41_50 -14.7 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132294"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor41_50"
+2026-11-10 14:36:39.790 |       - gridcell "-14.7"
+2026-11-10 14:36:39.790 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.790 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.790 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell
+2026-11-10 14:36:39.790 |       - gridcell "Vigente"
+2026-11-10 14:36:39.790 |     - row "132293 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor31-40 -10.1 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.790 |       - gridcell "132293"
+2026-11-10 14:36:39.790 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo1-5_IdadeCondutor31-40"
+2026-11-10 14:36:39.791 |       - gridcell "-10.1"
+2026-11-10 14:36:39.791 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.791 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.791 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Vigente"
+2026-11-10 14:36:39.791 |     - row "132292 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor51+ -19.7 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.791 |       - gridcell "132292"
+2026-11-10 14:36:39.791 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor51+"
+2026-11-10 14:36:39.791 |       - gridcell "-19.7"
+2026-11-10 14:36:39.791 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.791 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.791 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Vigente"
+2026-11-10 14:36:39.791 |     - row "132291 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor41-50 -8 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.791 |       - gridcell "132291"
+2026-11-10 14:36:39.791 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor41-50"
+2026-11-10 14:36:39.791 |       - gridcell "-8"
+2026-11-10 14:36:39.791 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.791 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.791 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Vigente"
+2026-11-10 14:36:39.791 |     - row "132290 STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor31-40 -3.4 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.791 |       - gridcell "132290"
+2026-11-10 14:36:39.791 |       - gridcell "STA_908_Ajuste_FOPA_Bônus10_IdadeVeiculo0KM_IdadeCondutor31-40"
+2026-11-10 14:36:39.791 |       - gridcell "-3.4"
+2026-11-10 14:36:39.791 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.791 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.791 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Vigente"
+2026-11-10 14:36:39.791 |     - row "132289 STA_908_Ajuste_FOPA_Bônus6-9_IdadeVeiculo6-10_IdadeCondutor51+ -7.3 Agravo/Desconto 10/11/2026 00:09 31/12/2070 23:59 Victor Brisanti Teodoro Vigente":
+2026-11-10 14:36:39.791 |       - gridcell "132289"
+2026-11-10 14:36:39.791 |       - gridcell "STA_908_Ajuste_FOPA_Bônus6-9_IdadeVeiculo6-10_IdadeCondutor51+"
+2026-11-10 14:36:39.791 |       - gridcell "-7.3"
+2026-11-10 14:36:39.791 |       - gridcell "Agravo/Desconto"
+2026-11-10 14:36:39.791 |       - gridcell "10/11/2026 00:09"
+2026-11-10 14:36:39.791 |       - gridcell "31/12/2070 23:59"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Victor Brisanti Teodoro"
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell
+2026-11-10 14:36:39.791 |       - gridcell "Vigente"
+2026-11-10 14:36:39.791 | - status: Mostrando de 1 até 10 de 8.568 registros Nenhuma linha selecionada
+2026-11-10 14:36:39.791 | - list:
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "Anterior":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "1":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "2":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "3":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "4":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "5":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "…":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "857":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 |   - listitem:
+2026-11-10 14:36:39.791 |     - link "Próximo":
+2026-11-10 14:36:39.791 |       - /url: "#"
+2026-11-10 14:36:39.791 | - navigation:
+2026-11-10 14:36:39.791 |   - button
+2026-11-10 14:36:39.791 |   - text: Filtro Avançado
+2026-11-10 14:36:39.791 |   - list:
+2026-11-10 14:36:39.791 |     - listitem:
+2026-11-10 14:36:39.791 |       - text: Variável
+2026-11-10 14:36:39.791 |       - combobox "Variável Variável":
+2026-11-10 14:36:39.791 |         - option "Agência SICREDI"
+2026-11-10 14:36:39.791 |         - option "Ano/Fabricação"
+2026-11-10 14:36:39.791 |         - option "Ano/Modelo do Veículo"
+2026-11-10 14:36:39.791 |         - option "Câmbio do veículo"
+2026-11-10 14:36:39.791 |         - option "Cambio Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Canal de Venda"
+2026-11-10 14:36:39.791 |         - option "Caracteristica Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Carta Verde (seguro na HDI)"
+2026-11-10 14:36:39.791 |         - option "Categ Tarifaria Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Categoria Tarifária"
+2026-11-10 14:36:39.791 |         - option "Classe de Bônus"
+2026-11-10 14:36:39.791 |         - option "Classe Social"
+2026-11-10 14:36:39.791 |         - option "Classe Veículo"
+2026-11-10 14:36:39.791 |         - option "Código Atividade"
+2026-11-10 14:36:39.791 |         - option "Código Parceiro"
+2026-11-10 14:36:39.791 |         - option "Codigo Regiao de Risco"
+2026-11-10 14:36:39.791 |         - option "Combustível"
+2026-11-10 14:36:39.791 |         - option "Combustivel Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Concentração Área Risco"
+2026-11-10 14:36:39.791 |         - option "Condutor Com Dependente"
+2026-11-10 14:36:39.791 |         - option "Condutor x Segurado"
+2026-11-10 14:36:39.791 |         - option "Configuracao Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Congênere"
+2026-11-10 14:36:39.791 |         - option "Corretora"
+2026-11-10 14:36:39.791 |         - option "Dependentes/Residentes"
+2026-11-10 14:36:39.791 |         - option "Empresa"
+2026-11-10 14:36:39.791 |         - option "Estado Civil do Condutor"
+2026-11-10 14:36:39.791 |         - option "Estipulante"
+2026-11-10 14:36:39.791 |         - option "Executivo de Contas HDI"
+2026-11-10 14:36:39.791 |         - option "Faixa Etária do Condutor"
+2026-11-10 14:36:39.791 |         - option "Filial"
+2026-11-10 14:36:39.791 |         - option "Flag Capital Biro"
+2026-11-10 14:36:39.791 |         - option "Flag Capital Metrop Biro"
+2026-11-10 14:36:39.791 |         - option "Flag Detentor da apolice"
+2026-11-10 14:36:39.791 |         - option "Flag NroChassi Restrito"
+2026-11-10 14:36:39.791 |         - option "Flag Possui Blindagem"
+2026-11-10 14:36:39.791 |         - option "Flag Possui CNH"
+2026-11-10 14:36:39.791 |         - option "Flag Possui Kit Gás"
+2026-11-10 14:36:39.791 |         - option "Flag Recálculo da Apólice para Endossos"
+2026-11-10 14:36:39.791 |         - option "Flag Renovacao Troca de veiculo"
+2026-11-10 14:36:39.791 |         - option "Flag Segurável"
+2026-11-10 14:36:39.791 |         - option "Flag Veículo Adaptado"
+2026-11-10 14:36:39.791 |         - option "Fluxo de Cálculo"
+2026-11-10 14:36:39.791 |         - option "Forma de Contratação"
+2026-11-10 14:36:39.791 |         - option "Franquia"
+2026-11-10 14:36:39.791 |         - option "Freio ABS Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Grupos de Modelos"
+2026-11-10 14:36:39.791 |         - option "Guarda do Veículo"
+2026-11-10 14:36:39.791 |         - option "HDI DUO - Planos"
+2026-11-10 14:36:39.791 |         - option "HDI DUO - Renovação"
+2026-11-10 14:36:39.791 |         - option "Importacao Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Marca Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Marcação histórica do CPF no RNS de Colisão"
+2026-11-10 14:36:39.791 |         - option "Modelo do Veículo"
+2026-11-10 14:36:39.791 |         - option "Motor Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Operador de Cálculo"
+2026-11-10 14:36:39.791 |         - option "Origem Marca"
+2026-11-10 14:36:39.791 |         - option "Origem Subscrição"
+2026-11-10 14:36:39.791 |         - option "PerÃodo de VigÃªncia"
+2026-11-10 14:36:39.791 |         - option "Porte Empresa"
+2026-11-10 14:36:39.791 |         - option "Porte Fat Presumido"
+2026-11-10 14:36:39.791 |         - option "Porte Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Produto"
+2026-11-10 14:36:39.791 |         - option "Qtde Populacao Total"
+2026-11-10 14:36:39.791 |         - option "Regiao Continente Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Região de Circulação"
+2026-11-10 14:36:39.791 |         - option "Regiao Unificada Biro"
+2026-11-10 14:36:39.791 |         - option "RNS do Segurado"
+2026-11-10 14:36:39.791 |         - option "RNS do Veículo"
+2026-11-10 14:36:39.791 |         - option "Roteiro de cálculo"
+2026-11-10 14:36:39.791 |         - option "Seção CNAE"
+2026-11-10 14:36:39.791 |         - option "Segmento Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Segurado Proprietario do veiculo(?)"
+2026-11-10 14:36:39.791 |         - option "Sexo do Condutor"
+2026-11-10 14:36:39.791 |         - option "Tempo de Habilitação do Condutor"
+2026-11-10 14:36:39.791 |         - option "Tipo Conta Santander"
+2026-11-10 14:36:39.791 |         - option "Tipo de Operação"
+2026-11-10 14:36:39.791 |         - option "Tipo de Operação do Item"
+2026-11-10 14:36:39.791 |         - option "Tipo de pessoa"
+2026-11-10 14:36:39.791 |         - option "Tipo de Pessoa"
+2026-11-10 14:36:39.791 |         - option "Tipo de Renovação"
+2026-11-10 14:36:39.791 |         - option "Tração do veículo"
+2026-11-10 14:36:39.791 |         - option "Tracao Tipo Vei Biro"
+2026-11-10 14:36:39.791 |         - option "Tracao Vei Biro"
+2026-11-10 14:36:39.791 |         - option "UF Biro"
+2026-11-10 14:36:39.791 |         - option "Utilização de Veículo"
+2026-11-10 14:36:39.791 |         - option "Veiculo PCD"
+2026-11-10 14:36:39.791 |         - option "Zero km"
+2026-11-10 14:36:39.791 |     - listitem:
+2026-11-10 14:36:39.791 |       - textbox "Pesquisar"
+2026-11-10 14:36:39.791 |       - listbox
+2026-11-10 14:36:39.791 |     - listitem:
+2026-11-10 14:36:39.791 |       - button "Adicionar"
+2026-11-10 14:36:39.791 |     - listitem:
+2026-11-10 14:36:39.791 |       - table
+2026-11-10 14:36:39.791 | - button "Categorias"
+2026-11-10 14:36:39.792 | - navigation:
+2026-11-10 14:36:39.792 |   - button
+2026-11-10 14:36:39.792 |   - text: Categorias
+2026-11-10 14:36:39.792 |   - list:
+2026-11-10 14:36:39.792 |     - listitem:
+2026-11-10 14:36:39.792 |       - textbox "Nova Categoria"
+2026-11-10 14:36:39.792 |       - button [disabled]
+2026-11-10 14:36:39.792 |     - listitem:
+2026-11-10 14:36:39.792 |       - table:
+2026-11-10 14:36:39.792 |         - row "Chamado ID3512":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3512"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3514":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3514"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3468":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3468"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3420":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3420"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3422":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3422"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3418":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3418"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3405":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3405"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3411":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3411"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3232":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3232"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3229":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3229"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3098":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3098"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3107":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3107"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3055":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3055"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3041":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3041"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID3030":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID3030"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2984":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2984"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2866":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2866"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2853":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2853"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2886":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2886"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2754":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2754"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2717":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2717"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2700":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2700"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2602":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2602"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "ChamadoID2571":
+2026-11-10 14:36:39.792 |           - cell "ChamadoID2571"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2578":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2578"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2533":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2533"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2548":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2548"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2455":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2455"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2461":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2461"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2454":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2454"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2442":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2442"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2129":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2129"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID2084":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID2084"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1969":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1969"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1942":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1942"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1930":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1930"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1928":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1928"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1950":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1950"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1920":
+2026-11-10 14:36:39.792 |           - cell "Chamado ID1920"
+2026-11-10 14:36:39.792 |           - cell:
+2026-11-10 14:36:39.792 |             - button
+2026-11-10 14:36:39.792 |         - row "Chamado ID1787":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1787"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1786":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1786"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1799":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1799"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1633":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1633"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1632":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1632"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1626":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1626"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1418":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1418"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1495":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1495"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1575":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1575"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1586":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1586"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1585":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1585"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1587":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1587"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1434":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1434"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1417":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1417"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1403":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1403"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1401":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1401"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Chamado ID1362":
+2026-11-10 14:36:39.793 |           - cell "Chamado ID1362"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Renovação":
+2026-11-10 14:36:39.793 |           - cell "Renovação"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "EngRev PrmMáximo":
+2026-11-10 14:36:39.793 |           - cell "EngRev PrmMáximo"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "EngRev PrmMínimo":
+2026-11-10 14:36:39.793 |           - cell "EngRev PrmMínimo"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Regras Simplificadas":
+2026-11-10 14:36:39.793 |           - cell "Regras Simplificadas"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 |         - row "Ajuste Pricing":
+2026-11-10 14:36:39.793 |           - cell "Ajuste Pricing"
+2026-11-10 14:36:39.793 |           - cell:
+2026-11-10 14:36:39.793 |             - button
+2026-11-10 14:36:39.793 | - navigation:
+2026-11-10 14:36:39.793 |   - list:
+2026-11-10 14:36:39.793 |     - listitem: Automóvel - Subscrição
+2026-11-10 14:36:39.793 |   - list:
+2026-11-10 14:36:39.793 |     - listitem:
+2026-11-10 14:36:39.793 |       - button
+2026-11-10 14:36:39.793 | - heading "Árvore" [level=5]
+2026-11-10 14:36:39.793 | - list:
+2026-11-10 14:36:39.793 |   - listitem:
+2026-11-10 14:36:39.793 |     - checkbox
+2026-11-10 14:36:39.793 |     - list:
+2026-11-10 14:36:39.793 |       - listitem:
+2026-11-10 14:36:39.793 |         - checkbox "Igualdade"
+2026-11-10 14:36:39.793 |         - text: Igualdade
+2026-11-10 14:36:39.793 |         - list:
+2026-11-10 14:36:39.793 |           - listitem:
+2026-11-10 14:36:39.793 |             - checkbox "Empresa"
+2026-11-10 14:36:39.793 |             - text: Empresa
+2026-11-10 14:36:39.793 |             - list:
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "HDI"
+2026-11-10 14:36:39.793 |                 - text: HDI
+2026-11-10 14:36:39.793 |           - listitem:
+2026-11-10 14:36:39.793 |             - checkbox "Produto"
+2026-11-10 14:36:39.793 |             - text: Produto
+2026-11-10 14:36:39.793 |             - list:
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "432"
+2026-11-10 14:36:39.793 |                 - text: "432"
+2026-11-10 14:36:39.793 |           - listitem:
+2026-11-10 14:36:39.793 |             - checkbox "Tipo de Renovação"
+2026-11-10 14:36:39.793 |             - text: Tipo de Renovação
+2026-11-10 14:36:39.793 |             - list:
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "Renovação HDI"
+2026-11-10 14:36:39.793 |                 - text: Renovação HDI
+2026-11-10 14:36:39.793 |       - listitem:
+2026-11-10 14:36:39.793 |         - checkbox "Exclusao"
+2026-11-10 14:36:39.793 |         - text: Exclusao
+2026-11-10 14:36:39.793 |         - list:
+2026-11-10 14:36:39.793 |           - listitem:
+2026-11-10 14:36:39.793 |             - checkbox "Código Parceiro"
+2026-11-10 14:36:39.793 |             - text: Código Parceiro
+2026-11-10 14:36:39.793 |             - list:
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "Ituran"
+2026-11-10 14:36:39.793 |                 - text: Ituran
+2026-11-10 14:36:39.793 |           - listitem:
+2026-11-10 14:36:39.793 |             - checkbox "Forma de Contratação"
+2026-11-10 14:36:39.793 |             - text: Forma de Contratação
+2026-11-10 14:36:39.793 |             - list:
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "Compreensiva"
+2026-11-10 14:36:39.793 |                 - text: Compreensiva
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "Compreensiva - Valor Determinado"
+2026-11-10 14:36:39.793 |                 - text: Compreensiva - Valor Determinado
+2026-11-10 14:36:39.793 |               - listitem:
+2026-11-10 14:36:39.793 |                 - checkbox "Valor de Mercado Referenciado"
+2026-11-10 14:36:39.793 |                 - text: Valor de Mercado Referenciado
+2026-11-10 14:36:39.793 | - button
+2026-11-10 14:36:39.793 | - button [disabled]
+2026-11-10 14:36:39.793 | - button [disabled]
+2026-11-10 14:36:39.793 | - button [disabled]
+2026-11-10 14:36:39.793 | - heading "Variáveis" [level=5]
+2026-11-10 14:36:39.793 | - group:
+2026-11-10 14:36:39.793 |   - text: Grupo de Variável
+2026-11-10 14:36:39.793 |   - combobox "Grupo de Variável":
+2026-11-10 14:36:39.794 |     - option "Favorito" [selected]
+2026-11-10 14:36:39.794 |     - option "Todas de Automóvel"
+2026-11-10 14:36:39.794 |     - option "Principais de Subscrição Auto"
+2026-11-10 14:36:39.794 |     - option "Todas Santander Auto"
+2026-11-10 14:36:39.794 |     - option "Todas Santander Auto (Roteiro 6)"
+2026-11-10 14:36:39.794 |     - option "Principais Frota (Roteiro 8)"
+2026-11-10 14:36:39.794 |   - text: Variável
+2026-11-10 14:36:39.794 |   - combobox
+2026-11-10 14:36:39.794 |   - button [disabled]
+2026-11-10 14:36:39.794 | - heading "Regra" [level=5]
+2026-11-10 14:36:39.794 | - group:
+2026-11-10 14:36:39.794 |   - text: ID
+2026-11-10 14:36:39.794 |   - combobox "ID" [disabled]:
+2026-11-10 14:36:39.794 |     - option "119979" [selected]
+2026-11-10 14:36:39.794 |   - text: Nome da Regra
+2026-11-10 14:36:39.794 |   - textbox "Nome da Regra": Regra Modelo - Renovação Ituran Não Compreensiva
+2026-11-10 14:36:39.794 |   - text: Data Inicial
+2026-11-10 14:36:39.794 |   - textbox "Data Inicial": 2026-05-28
+2026-11-10 14:36:39.794 |   - text: Hora Inicial
+2026-11-10 14:36:39.794 |   - textbox "Hora Inicial": 00:00
+2026-11-10 14:36:39.794 |   - text: Data Final
+2026-11-10 14:36:39.794 |   - textbox "Data Final": 2070-12-31
+2026-11-10 14:36:39.794 |   - text: Hora Final
+2026-11-10 14:36:39.794 |   - textbox "Hora Final": 23:59
+2026-11-10 14:36:39.794 |   - text: "% Ajuste"
+2026-11-10 14:36:39.794 |   - spinbutton "% Ajuste": "0"
+2026-11-10 14:36:39.794 |   - text: Tipo
+2026-11-10 14:36:39.794 |   - combobox "Tipo":
+2026-11-10 14:36:39.794 |     - option "Não exibe prêmio"
+2026-11-10 14:36:39.794 |     - option "Agravo/Desconto" [selected]
+2026-11-10 14:36:39.794 |     - option "Ajuste por relac. IS"
+2026-11-10 14:36:39.794 |   - text: Categoria
+2026-11-10 14:36:39.794 |   - combobox "Categoria":
+2026-11-10 14:36:39.794 |     - option "Sem Categoria" [selected]
+2026-11-10 14:36:39.794 |     - option "Chamado ID3512"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3514"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3468"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3420"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3422"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3418"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3405"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3411"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3232"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3229"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3098"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3107"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3055"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3041"
+2026-11-10 14:36:39.794 |     - option "Chamado ID3030"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2984"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2866"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2853"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2886"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2754"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2717"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2700"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2602"
+2026-11-10 14:36:39.794 |     - option "ChamadoID2571"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2578"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2533"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2548"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2455"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2461"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2454"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2442"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2129"
+2026-11-10 14:36:39.794 |     - option "Chamado ID2084"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1969"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1942"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1930"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1928"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1950"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1920"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1787"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1786"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1799"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1633"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1632"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1626"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1418"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1495"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1575"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1586"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1585"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1587"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1434"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1417"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1403"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1401"
+2026-11-10 14:36:39.794 |     - option "Chamado ID1362"
+2026-11-10 14:36:39.794 |     - option "Renovação"
+2026-11-10 14:36:39.794 |     - option "EngRev PrmMáximo"
+2026-11-10 14:36:39.794 |     - option "EngRev PrmMínimo"
+2026-11-10 14:36:39.794 |     - option "Regras Simplificadas"
+2026-11-10 14:36:39.794 |     - option "Ajuste Pricing"
+2026-11-10 14:36:39.794 |   - text: Mensagem HDI Digital
+2026-11-10 14:36:39.794 |   - textbox "Mensagem HDI Digital":
+2026-11-10 14:36:39.794 |     - /placeholder: Mensagem HDI Digital...
+2026-11-10 14:36:39.794 |   - text: Comentário
+2026-11-10 14:36:39.794 |   - textbox "Comentário"
+2026-11-10 14:36:39.794 | - button "Salvar" [disabled]
+2026-11-10 14:36:39.794 | - button "Excluir"
+2026-11-10 14:36:39.794 | - button "Retificar" [disabled]
+2026-11-10 14:36:39.794 | - button "Aprovação"
+2026-11-10 14:36:39.794 | - button "Encerrar" [disabled]
+2026-11-10 14:36:39.794 | - button "Histórico"
+2026-11-10 14:36:39.794 | - navigation:
+2026-11-10 14:36:39.794 |   - button
+2026-11-10 14:36:39.794 |   - text: Histórico
+2026-11-10 14:36:39.794 |   - list:
+2026-11-10 14:36:39.795 |     - listitem:
+2026-11-10 14:36:39.795 |       - table:
+2026-11-10 14:36:39.795 |         - rowgroup:
+2026-11-10 14:36:39.795 |           - row "Id Nome Status Inicio Fim Ação":
+2026-11-10 14:36:39.795 |             - columnheader "Id"
+2026-11-10 14:36:39.795 |             - columnheader "Nome"
+2026-11-10 14:36:39.795 |             - columnheader "Status"
+2026-11-10 14:36:39.795 |             - columnheader "Inicio"
+2026-11-10 14:36:39.795 |             - columnheader "Fim"
+2026-11-10 14:36:39.795 |             - columnheader "Ação"
+2026-11-10 14:36:39.795 |         - rowgroup:
+2026-11-10 14:36:39.795 |           - row "119979 Regra Modelo - Renovação Ituran Não Compreensiva Em aberto 31/12/2070 23:59 Agravo/Desconto":
+2026-11-10 14:36:39.795 |             - cell "119979"
+2026-11-10 14:36:39.795 |             - cell "Regra Modelo - Renovação Ituran Não Compreensiva"
+2026-11-10 14:36:39.795 |             - cell "Em aberto"
+2026-11-10 14:36:39.795 |             - cell
+2026-11-10 14:36:39.795 |             - cell "31/12/2070 23:59"
+2026-11-10 14:36:39.795 |             - cell "Agravo/Desconto"); tentando pelo nome 'Ituran Não Compreensiva'.
+2026-11-10 14:36:50.052 | 2026-11-10 14:36:50 | WARNING | ipop.pages.lista_regras | Clique na linha 119979 interceptado; disparando o evento direto na célula.
+2026-11-10 14:37:20.535 | 2026-11-10 14:37:20 | ERROR   | ipop.robo | Falhou a regra 1 (TestesSubs1)
+2026-11-10 14:37:20.535 | Traceback (most recent call last):
+2026-11-10 14:37:20.535 |   File "/app/ipop/robo.py", line 207, in _cadastrar
+2026-11-10 14:37:20.535 |     resultado = servico.cadastrar(regra)
+2026-11-10 14:37:20.535 |   File "/app/ipop/services/cadastro.py", line 66, in cadastrar
+2026-11-10 14:37:20.535 |     self._copiar_modelo(regra)
+2026-11-10 14:37:20.535 |     ~~~~~~~~~~~~~~~~~~~^^^^^^^
+2026-11-10 14:37:20.535 |   File "/app/ipop/services/cadastro.py", line 35, in _copiar_modelo
+2026-11-10 14:37:20.535 |     self.lista.copiar_selecionada()
+2026-11-10 14:37:20.535 |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+2026-11-10 14:37:20.535 |   File "/app/ipop/pages/lista_regras.py", line 117, in copiar_selecionada
+2026-11-10 14:37:20.535 |     self.copiar_btn.click()
+2026-11-10 14:37:20.535 |     ~~~~~~~~~~~~~~~~~~~~~^^
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 18032, in click
+2026-11-10 14:37:20.535 |     self._sync(
+2026-11-10 14:37:20.535 |     ~~~~~~~~~~^
+2026-11-10 14:37:20.535 |         self._impl_obj.click(
+2026-11-10 14:37:20.535 |         ^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 14:37:20.535 |     ...<11 lines>...
+2026-11-10 14:37:20.535 |         )
+2026-11-10 14:37:20.535 |         ^
+2026-11-10 14:37:20.535 |     )
+2026-11-10 14:37:20.535 |     ^
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+2026-11-10 14:37:20.535 |     return task.result()
+2026-11-10 14:37:20.535 |            ~~~~~~~~~~~^^
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_locator.py", line 165, in click
+2026-11-10 14:37:20.535 |     return await self._frame._click(self._selector, strict=True, **params)
+2026-11-10 14:37:20.535 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_frame.py", line 594, in _click
+2026-11-10 14:37:20.535 |     await self._channel.send("click", self._timeout, locals_to_params(locals()))
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 76, in send
+2026-11-10 14:37:20.535 |     return await self._connection.wrap_api_call(
+2026-11-10 14:37:20.535 |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-10 14:37:20.535 |     ...<3 lines>...
+2026-11-10 14:37:20.535 |     )
+2026-11-10 14:37:20.535 |     ^
+2026-11-10 14:37:20.535 |   File "/usr/local/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 632, in wrap_api_call
+2026-11-10 14:37:20.535 |     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+2026-11-10 14:37:20.535 | playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+2026-11-10 14:37:20.535 | Call log:
+2026-11-10 14:37:20.535 |   - waiting for locator("button.btn.btn-primary:has-text('Copiar')")
+2026-11-10 14:37:20.535 |     - locator resolved to <button type="button" _ngcontent-hlg-c53="" class="btn btn-primary">…</button>
+2026-11-10 14:37:20.535 |   - attempting click action
+2026-11-10 14:37:20.535 |     2 × waiting for element to be visible, enabled and stable
+2026-11-10 14:37:20.535 |       - element is visible, enabled and stable
+2026-11-10 14:37:20.535 |       - scrolling into view if needed
+2026-11-10 14:37:20.535 |       - done scrolling
+2026-11-10 14:37:20.535 |       - <label for="1I" _ngcontent-hlg-c50="" class="custom-control-label">Igualdade</label> from <div _ngcontent-hlg-c53="" id="menu_vertical_editar_regras" class="mostrarMenuVerticalEditarRegras">…</div> subtree intercepts pointer events
+2026-11-10 14:37:20.535 |     - retrying click action
+2026-11-10 14:37:20.535 |     - waiting 20ms
+2026-11-10 14:37:20.535 |     2 × waiting for element to be visible, enabled and stable
+2026-11-10 14:37:20.535 |       - element is visible, enabled and stable
+2026-11-10 14:37:20.535 |       - scrolling into view if needed
+2026-11-10 14:37:20.535 |       - done scrolling
+2026-11-10 14:37:20.535 |       - <label for="1I" _ngcontent-hlg-c50="" class="custom-control-label">Igualdade</label> from <div _ngcontent-hlg-c53="" id="menu_vertical_editar_regras" class="mostrarMenuVerticalEditarRegras">…</div> subtree intercepts pointer events
+2026-11-10 14:37:20.535 |     - retrying click action
+2026-11-10 14:37:20.535 |       - waiting 100ms
+2026-11-10 14:37:20.535 |     57 × waiting for element to be visible, enabled and stable
+2026-11-10 14:37:20.535 |        - element is visible, enabled and stable
+2026-11-10 14:37:20.535 |        - scrolling into view if needed
+2026-11-10 14:37:20.535 |        - done scrolling
+2026-11-10 14:37:20.535 |        - <label for="1I" _ngcontent-hlg-c50="" class="custom-control-label">Igualdade</label> from <div _ngcontent-hlg-c53="" id="menu_vertical_editar_regras" class="mostrarMenuVerticalEditarRegras">…</div> subtree intercepts pointer events
+2026-11-10 14:37:20.535 |      - retrying click action
+2026-11-10 14:37:20.535 |        - waiting 500ms
+2026-11-10 14:37:20.535 | 
+2026-11-10 14:37:22.231 | 2026-11-10 14:37:22 | INFO    | ipop.worker | Terminou 20261110-121954-cafccc com código 5
