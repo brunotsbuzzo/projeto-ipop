@@ -1,4 +1,5 @@
 """Tela de lista de regras: pesquisar, copiar o modelo e abrir a cópia (antiga BasePage)."""
+
 from __future__ import annotations
 
 import logging
@@ -13,17 +14,25 @@ logger = logging.getLogger(__name__)
 class ListaRegrasPage:
     # Editor lateral de regra. Fica POR CIMA da lista e dos botões Copiar/Detalhes
     # enquanto estiver aberto. O campo "Pesquisar por código" abre a regra nele.
-    SELETOR_EDITOR_ABERTO = "#menu_vertical_editar_regras.mostrarMenuVerticalEditarRegras"
+    SELETOR_EDITOR_ABERTO = (
+        "#menu_vertical_editar_regras.mostrarMenuVerticalEditarRegras"
+    )
     # Mesmo botão que o formulário usa para fechar (CadastroDeRegraPage.fechar_regra_btn).
-    SELETOR_FECHAR_EDITOR = "button.btn.btn-outline-light.btn-sm:not(.position-absolute)"
+    SELETOR_FECHAR_EDITOR = (
+        "button.btn.btn-outline-light.btn-sm:not(.position-absolute)"
+    )
 
     def __init__(self, page: Page):
         self.page = page
-        self.busca_nome: Locator = page.locator('input[placeholder="Pesquisar"][aria-controls="regras_lista"]')
+        self.busca_nome: Locator = page.locator(
+            'input[placeholder="Pesquisar"][aria-controls="regras_lista"]'
+        )
         self.tabela_linhas: Locator = page.locator("#regras_lista tbody tr")
         self.processando: Locator = page.locator("#regras_lista_processing")
         self.nova_btn: Locator = page.get_by_role("button", name="Nova", exact=True)
-        self.copiar_btn: Locator = page.locator("button.btn.btn-primary:has-text('Copiar')")
+        self.copiar_btn: Locator = page.locator(
+            "button.btn.btn-primary:has-text('Copiar')"
+        )
         self.confirmar_btn: Locator = page.locator("button:has-text('Confirmar')")
         self.detalhes_btn: Locator = page.locator("button", has_text="Detalhes")
         self.editar_btn: Locator = page.locator("button", has_text="Editar")
@@ -56,7 +65,9 @@ class ListaRegrasPage:
         try:
             expect(indicadores).to_have_count(0, timeout=timeout)
         except AssertionError:
-            logger.warning("Indicador de carregamento ainda visível após %d ms; seguindo.", timeout)
+            logger.warning(
+                "Indicador de carregamento ainda visível após %d ms; seguindo.", timeout
+            )
 
     def esperar_lista_pronta(self, timeout: int = 60_000) -> None:
         expect(self.busca_nome).to_be_editable(timeout=timeout)
@@ -87,8 +98,10 @@ class ListaRegrasPage:
         try:
             celula.click(timeout=10_000)
         except PlaywrightTimeoutError:
-            logger.warning("Clique na linha %s bloqueado; fechando o editor lateral e tentando de novo.",
-                           linha.get_attribute("id"))
+            logger.warning(
+                "Clique na linha %s bloqueado; fechando o editor lateral e tentando de novo.",
+                linha.get_attribute("id"),
+            )
             self.fechar_editor_se_aberto()
             celula.click(timeout=10_000)
 
@@ -99,9 +112,11 @@ class ListaRegrasPage:
         try:
             expect(linha).to_be_visible(timeout=timeout)
         except AssertionError:
-            celula = self.page.locator("#regras_lista tbody td").filter(
-                has_text=re.compile(rf"^\s*{id_regra}\s*$")
-            ).first
+            celula = (
+                self.page.locator("#regras_lista tbody td")
+                .filter(has_text=re.compile(rf"^\s*{id_regra}\s*$"))
+                .first
+            )
             expect(celula).to_be_visible(timeout=timeout)
             linha = celula.locator("xpath=ancestor::tr[1]")
         self._clicar_linha(linha)
@@ -115,9 +130,45 @@ class ListaRegrasPage:
         expect(self.tabela_linhas.first).to_be_visible(timeout=timeout)
         self._clicar_linha(self.tabela_linhas.first)
 
+    # ---------- leitura da lista ----------
+    def mostrar_mais_linhas(self, quantidade: str = "100") -> None:
+        """Aumenta as linhas por página (o padrão do IPOP é 10), se a lista tiver o seletor."""
+        seletor = self.page.locator('select[name="regras_lista_length"]')
+        if seletor.count() == 0:
+            return
+        seletor.first.select_option(quantidade)
+        self.esperar_tabela()
+
+    def nome_da_regra(self, id_regra: int, timeout: int = 15_000) -> str:
+        """Nome (2ª coluna) da linha com exatamente esse ID na lista atual."""
+        linha = self.page.locator(f'#regras_lista tbody tr[id="{id_regra}"]')
+        expect(linha).to_be_visible(timeout=timeout)
+        return linha.locator("td").nth(1).inner_text().strip()
+
+    def ids_das_copias(self, nome_modelo: str, timeout: int = 15_000) -> set[str]:
+        """Pesquisa o nome do modelo e devolve os IDs das linhas 'Cópia de ...' achadas."""
+        self.pesquisar_por_nome(nome_modelo)
+        # O próprio modelo sempre aparece nessa busca: espera a lista refletir a pesquisa.
+        expect(self.tabela_linhas.first).to_contain_text(
+            nome_modelo, ignore_case=True, timeout=timeout
+        )
+        linhas = self.page.eval_on_selector_all(
+            "#regras_lista tbody tr",
+            "rs => rs.map(r => [r.id || '', ((r.cells[1] || {}).innerText || '').trim()])",
+        )
+        return {
+            id_
+            for id_, nome in linhas
+            if id_
+            and nome.casefold().startswith("cópia de")
+            and nome_modelo.casefold() in nome.casefold()
+        }
+
     def regra_existe(self, nome: str, timeout: int = 15_000) -> bool:
         self.pesquisar_por_nome(nome)
-        celula = self.page.locator("#regras_lista td").filter(has_text=re.compile(rf"^\s*{re.escape(nome)}\s*$"))
+        celula = self.page.locator("#regras_lista td").filter(
+            has_text=re.compile(rf"^\s*{re.escape(nome)}\s*$")
+        )
         try:
             expect(celula.first).to_be_visible(timeout=timeout)
             return True
@@ -134,7 +185,9 @@ class ListaRegrasPage:
         try:
             expect(self.copiar_btn.first).to_be_enabled(timeout=10_000)
         except AssertionError as erro:
-            raise RuntimeError("Botão Copiar desabilitado: nenhuma regra-modelo ficou selecionada na lista.") from erro
+            raise RuntimeError(
+                "Botão Copiar desabilitado: nenhuma regra-modelo ficou selecionada na lista."
+            ) from erro
         self.copiar_btn.first.click()
         self.confirmar_btn.click()
         expect(self.confirmar_btn.first).to_be_hidden(timeout=30_000)
